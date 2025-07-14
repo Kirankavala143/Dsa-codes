@@ -185,6 +185,52 @@ arr = [1, 2, 3, 5]
 print(find_missing_number(arr))
 
 
+# Find the number that appears once, and the other numbers twice
+def find_single_number(arr):
+    for i, num in enumerate(arr):
+        if arr.count(num) == 1:
+            return num
 
+arr = [1,1,2, 2, 3, 4, 4, 5, 5]
+print(find_single_number(arr))
 
+# another way to find the number that appears once, and the other numbers twice
+def find_single_number(arr):
+    a={}
+    for i in arr:
+        if i in a:
+            a[i]+=1
+        else:
+            a[i]=1
+    for i in a:
+        if a[i]==1:
+            return i
 
+arr = [1,1,2, 2, 3, 4, 4, 5, 5]
+print(find_single_number(arr))
+
+# # li=[2,34,6,3,2,3,4,3,2,32]
+# li=["hello","hi","hello","hi","hello"]
+# s={}
+# for i in li:
+#     if i not in s:
+#         s[i]=1
+#     else:
+#         s[i]+=1
+# print(s)
+
+# leet code 169
+# li=[2,2,1,1,1,2,2]
+# s={}
+# for i in li:
+#     if i not in s:
+#         s[i]=1
+#     else:
+#         s[i]+=1
+#     print(s)
+# ans=-1
+# temp=len(li)//2
+# for i in s:
+#     if s[i]> temp:
+#         ans=i
+# print(ans)
