@@ -90,11 +90,24 @@
 # rotated_a = a[-k:] + a[:-k]
 # print(rotated_a)
 
-n=[20,0,0,3,45,670,3,0,80,0,7,0,0,7,0]
-lis=[]
-for i in range(len(n)):
-    if n[i]==0:
-        lis.append(n[i])
-    else :
-        lis.insert(0, n[i])
-print(lis)  # This will print the list of zeros found in the array
+# n=[20,0,0,3,45,670,3,0,80,0,7,0,0,7,0]
+# lis=[]
+# for i in range(len(n)):
+#     if n[i]==0:
+#         lis.append(n[i])
+#     else :
+#         lis.insert(0, n[i])
+# print(lis)  # This will print the list of zeros found in the array
+
+n = [20, 0, 0, 3, 45, 670, 3, 0, 80, 0, 7, 0, 0, 7, 0]
+lis = []
+
+# First add non-zero elements
+for x in n:
+    if x != 0:
+        lis.append(x)
+# Then add zeros
+zero_count = n.count(0)
+lis.extend([0] * zero_count)
+
+print(lis)
