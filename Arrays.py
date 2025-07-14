@@ -112,7 +112,7 @@ lis.extend([0] * zero_count)
 
 print(lis)
 
-# optimal solution
+# optimal solutionc
 nums=[0,1,0,3,12]
 pos = 0  # position to place the next non-zero
 for i in range(len(nums)):
@@ -122,3 +122,34 @@ for i in range(len(nums)):
 for i in range(pos, len(nums)):
     nums[i] = 0
 print(nums)
+
+# union
+def find_union(arr1,arr2):
+    s=set()
+    union=[]
+    for i in arr1:
+        s.add(i)
+    for i in arr2:
+        s.add(i)
+    for i in s:
+        union.append(i)
+    return union
+
+arr1=[1,2,3,4,5]
+arr2=[3,4,5,6,7]
+print(find_union(arr1,arr2))
+
+#intersection
+def find_intersection(arr1,arr2):
+    s=set()
+    intersection=[]
+    for i in arr1:
+        s.add(i)
+    for i in arr2:
+        if i in s:
+            intersection.append(i)
+    return intersection
+
+arr1=[1,2,3,3,4,5]
+arr2=[3,4,5,6,7]
+print(find_intersection(arr1,arr2))
