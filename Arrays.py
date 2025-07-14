@@ -153,3 +153,38 @@ def find_intersection(arr1,arr2):
 arr1=[1,2,3,3,4,5]
 arr2=[3,4,5,6,7]
 print(find_intersection(arr1,arr2))
+
+# find the missing number in a array
+# def find_missing_number(arr):
+#     n = len(arr)
+#     total_sum = (n * (n + 1)) // 2
+#     actual_sum = sum(arr)
+#     missing_number = total_sum - actual_sum
+#     return missing_number
+
+# arr = [1, 2, 3, 5]
+# print(find_missing_number(arr))
+
+# def find_missing(arr):
+#     for i in range(1, len(arr) + 1):
+#         if i not in arr:
+#             return i
+
+# # arr = [1, 2, 3,4,6,9,7,5,8,10]
+# arr=[0,1]
+# print(find_missing(arr))
+
+# summation
+def find_missing_number(arr):
+    n = len(arr) + 1
+    expected_sum = n * (n + 1) // 2
+    actual_sum = sum(arr)
+    return expected_sum - actual_sum
+
+arr = [1, 2, 3, 5]
+print(find_missing_number(arr))
+
+
+
+
+
