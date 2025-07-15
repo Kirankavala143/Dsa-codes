@@ -1,4 +1,15 @@
-# print 1 to n using recursion
+#RECURSION
+def sayhi():
+    print("hi")
+    # sayhi()
+    print("bye")
+
+sayhi()
+
+
+
+ 
+#  print 1 to n using recursion
 
 # def print1ton(n):
 #     if n==1:
@@ -53,3 +64,5 @@ def fibnocci(n):
         return 1
     return fibnocci(n-1) + fibnocci(n-2)
 print(fibnocci(5))  
+
+# hash table
