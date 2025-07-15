@@ -1,10 +1,18 @@
 # print 1 to n using recursion
 
-def print1ton(n):
-    if n==1:
-        print(1)
-        return
-    print1ton(n-1)
-    print(n)
+# def print1ton(n):
+#     if n==1:
+#         print(1)
+#         return
+#     print1ton(n-1)
+#     print(n)
+# print1ton(5)
 
-print1ton(5)
+# def printNto1(n):
+#     if n==1:
+#         print(1)
+#         return
+#     print(n)
+#     printNto1(n-1)
+# printNto1(5)
+
