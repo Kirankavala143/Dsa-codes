@@ -44,3 +44,12 @@
 #     return arr[::-1]
 
 # print(reverse([1, 2, 3, 4, 5]))
+
+# check if a string is palindrome or not
+
+# fibnoccai number recursion sequence
+def fibnocci(n):
+    if n==1 or n==2:
+        return 1
+    return fibnocci(n-1) + fibnocci(n-2)
+print(fibnocci(5))  
