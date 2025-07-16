@@ -66,3 +66,8 @@ def fibnocci(n):
 print(fibnocci(5))  
 
 # hash table
+from collections import Counter
+
+s = "hello world"
+count = Counter(s)
+print(count)  # Output: {'l': 3, 'o': 2, ...}
