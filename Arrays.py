@@ -209,22 +209,81 @@ def find_single_number(arr):
 arr = [1,1,2, 2, 3, 4, 4, 5, 5]
 print(find_single_number(arr))
 
+# Sort an array of 0's 1's & 2's
+
+# def sort_012(arr):
+#     low = 0
+#     mid = 0
+#     high = len(arr) - 1
+
+#     while mid <= high:
+#         if arr[mid] == 0:
+#             arr[low], arr[mid] = arr[mid], arr[low]
+#             low += 1
+#             mid += 1
+#         elif arr[mid] == 1:
+#             mid += 1
+#         else:
+#             arr[mid], arr[high] = arr[high], arr[mid]
+#             high -= 1
+#     return arr
+
+# arr = [0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1]
+# print(sort_012(arr))
+
+# majority element in an array (Find the Majority Element that occurs more than N/2 times)
+# def majority(a):
+#     count={}
+#     for i in a:
+#         if i in count:
+#             count[i]+=1
+#         else:
+#             count[i]=1
+#     for i in count:
+#         if count[i] > len(a)//2:
+#             return i
+
+# a=[3,3,4,2,4,4,2,4,4]
+# print(majority(a))
+
+
+def kadane(arr):
+    max_sum = float('-inf')  # Initialize to negative infinity
+    current_sum = 0
+
+    for num in arr:
+        current_sum += num
+        max_sum = max(max_sum, current_sum)
+        
+        # If current_sum goes negative, reset it
+        if current_sum < 0:
+            current_sum = 0
+
+    return max_sum
+
+arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+print("Maximum Subarray Sum:", kadane(arr))
+
+
+
+
+
+
+
 # Longest Subarray with sum K
+# def longest_subarray(arr, K):
+#     max_len = 0
+#     n = len(arr)
 
-def longest_subarray(arr, K):
-    max_len = 0
-    n = len(arr)
+#     for i in range(n):
+#         total = 0
+#         for j in range(i, n):
+#             total += arr[j]
+#             if total == K:
+#                 max_len = max(max_len, j - i + 1)
 
-    for i in range(n):
-        total = 0
-        for j in range(i, n):
-            total += arr[j]
-            if total == K:
-                max_len = max(max_len, j - i + 1)
+#     return max_len
 
-    return max_len
-
-
-arr = [2, 1, 5, 2, 3, 2]
-k = 5
-print(longest_subarray(arr, k))
+# arr = [2, 1, 5, 2, 3, 2]
+# k = 5
+# print(longest_subarray(arr, k))
