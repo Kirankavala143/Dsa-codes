@@ -209,49 +209,22 @@ def find_single_number(arr):
 arr = [1,1,2, 2, 3, 4, 4, 5, 5]
 print(find_single_number(arr))
 
-# # li=[2,34,6,3,2,3,4,3,2,32]
-# li=["hello","hi","hello","hi","hello"]
-# s={}
-# for i in li:
-#     if i not in s:
-#         s[i]=1
-#     else:
-#         s[i]+=1
-# print(s)
+# Longest Subarray with sum K
 
-# leet code 169
-# li=[2,2,1,1,1,2,2]
-# s={}
-# for i in li:
-#     if i not in s:
-#         s[i]=1
-#     else:
-#         s[i]+=1
-#     print(s)
-# ans=-1
-# temp=len(li)//2
-# for i in s:
-#     if s[i]> temp:
-#         ans=i
-# print(ans)
+def longest_subarray(arr, K):
+    max_len = 0
+    n = len(arr)
 
-# leet code 169
-# li=[2,2,1,1,1,2,2]
-# s={}
-# for i in li:
-#     if i not in s:
-#         s[i]=1
-#     else:
-#         s[i]+=1
-#     print(s)
-# ans=-1
-# temp=len(li)//2
-# for i in s:
-#     if s[i]> temp:
-#         ans=i
-# print(ans)
+    for i in range(n):
+        total = 0
+        for j in range(i, n):
+            total += arr[j]
+            if total == K:
+                max_len = max(max_len, j - i + 1)
 
-# l=[2,2,1,1,1,2,2]
-# l.sort()
-# temp=len(l)//2
-# print(l[temp])
+    return max_len
+
+
+arr = [2, 1, 5, 2, 3, 2]
+k = 5
+print(longest_subarray(arr, k))
