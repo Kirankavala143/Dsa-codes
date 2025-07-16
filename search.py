@@ -30,14 +30,68 @@
 # print(arr)
 
 # insertion sort(insert elements at right position)
-arr=[3,24,7,87,5,9,78]
-n=len(arr)
-for i in range(1,n):
-    key=arr[i]
-    j=i-1
-    while j>=0 and key<arr[j]:
-        arr[j+1]=arr[j]
-        j-=1
-    arr[j+1]=key
-print(arr)
+# arr=[3,24,7,87,5,9,78]
+# n=len(arr)
+# for i in range(1,n):
+#     key=arr[i]
+#     j=i-1
+#     while j>=0 and key<arr[j]:
+#         arr[j+1]=arr[j]
+#         j-=1
+#     arr[j+1]=key
+# print(arr)
 
+# merge sort(merging elements)
+# def merge_sort(arr):
+#     if len(arr) > 1:
+#         mid = len(arr) // 2         # Step 1: Find the middle
+#         left = arr[:mid]            # Step 2: Divide into left half
+#         right = arr[mid:]           # Step 3: Divide into right half
+
+#         merge_sort(left)            # Step 4: Sort the left half
+#         merge_sort(right)           # Step 5: Sort the right half
+
+#         i = j = k = 0
+
+#         # Step 6: Merge the two sorted halves
+#         while i < len(left) and j < len(right):
+#             if left[i] < right[j]:
+#                 arr[k] = left[i]
+#                 i += 1
+#             else:
+#                 arr[k] = right[j]
+#                 j += 1
+#             k += 1
+
+#         # Step 7: Check for remaining elements
+#         while i < len(left):
+#             arr[k] = left[i]
+#             i += 1
+#             k += 1
+
+#         while j < len(right):
+#             arr[k] = right[j]
+#             j += 1
+#             k += 1
+
+# # Example usage
+# arr = [38, 27, 43, 3, 9, 82, 10]
+# merge_sort(arr)
+# print("Sorted array:", arr)
+
+# # quick sort
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+
+    return quick_sort(left) + middle + quick_sort(right)
+
+# Example usage
+arr = [38, 27, 43, 3, 9, 82, 10]
+sorted_arr = quick_sort(arr)
+print("Sorted array:", sorted_arr)
