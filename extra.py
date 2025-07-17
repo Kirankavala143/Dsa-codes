@@ -74,10 +74,25 @@ print(count)
 #                 count+=1
 #     return count
 
+# jewels
 jewels="aA"
 stones="aAAbbbb"
-count=0
-for i in jewels:
-    if i in stones:
-        count+=stones.count(i)
-print(count)
+# count=0
+# for i in stones:
+#     if i in jewels:
+#         count+=1
+# print(count)
+
+# dic={}
+# for i in stones:
+#     if i in dic:
+#         dic[i]+=1
+#     else:
+#         dic[i]=1
+# ans=0
+# for i in range(len(jewels)):
+#     ch=jewels[i]
+#     if ch in dic:
+#         ans+=dic[ch]
+#         print(ans)
+
