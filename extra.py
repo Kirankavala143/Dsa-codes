@@ -96,3 +96,41 @@ stones="aAAbbbb"
 #         ans+=dic[ch]
 #         print(ans)
 
+# question1 
+    # def processStr(self, s: str) -> str:
+    #     a=[]
+    #     for i in s:
+    #         if i.islower():
+    #             a.append(i)
+    #         elif i=='*':
+    #             if a:
+    #                 a.pop()
+    #             break
+    #         elif i=='#':
+    #             a+=a[:]
+    #         elif i=='%':
+    #             a.reverse()
+    #     return ''.join(a)
+
+    # 3
+    # class Solution:
+    # def processStr(self, s: str, k: int) -> str:
+    #     a=[]
+    #     for i in s:
+    #         if i.islower():
+    #             a.append(i)
+    #         elif i=='*':
+    #             if a:
+    #                 a.pop()
+                
+    #         elif i=='#':
+    #             a+=a[:]
+    #         elif i=='%':
+    #             a.reverse()
+    #     res=''.join(a)
+    #     if 1 <= k <= len(res):
+    #         # If k is within the valid range, return the character at index k-1.
+    #         return res[k]
+    #     else:
+    #         # If k is out of bounds (e.g., k=0, k < 1, or k > len(res)), return '.'.
+    #         return '.'
