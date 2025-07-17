@@ -20,14 +20,30 @@
 #     arr[i],arr[min_index]=arr[min_index],arr[i]
 # print(arr)
 
+li=[2,5,4,1,3]
+j=3
+li[j],li[j+1]=li[j+1],li[j]
+print(li)
+
 # bubble sort  (compare beside numbers)
-# arr=[3,24,7,87,5,9,78]
-# n=len(arr)
-# for i in range(n-1):
-#     for j in range(n-i-1):
-#         if arr[j+1]<arr[j]:
-#             arr[j],arr[j+1]=arr[j+1],arr[j]
-# print(arr)
+arr=[3,24,7,87,5,9,78]
+n=len(arr)
+for i in range(n-1):
+    for j in range(n-i-1):
+        if arr[j]>arr[j+1]:
+            arr[j],arr[j+1]=arr[j+1],arr[j]
+print(arr)
+
+# decending order
+arr=[3,24,7,87,5,9,78]
+n=len(arr)
+for i in range(n-1):
+    for j in range(n-i-1):
+        if arr[j]<arr[j+1]:
+            arr[j],arr[j+1]=arr[j+1],arr[j]
+print(arr)
+
+
 
 # insertion sort(insert elements at right position)
 # arr=[3,24,7,87,5,9,78]
