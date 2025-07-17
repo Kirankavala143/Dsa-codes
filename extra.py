@@ -134,3 +134,14 @@ stones="aAAbbbb"
     #     else:
     #         # If k is out of bounds (e.g., k=0, k < 1, or k > len(res)), return '.'.
     #         return '.'
+
+
+key = "the quick brown fox jumps over the lazy dog"
+#  message = "vkbs bs t suepuv"
+dic={}
+temp=1
+for i in key:
+    if i not in dic:
+        dic[i]=temp
+        temp+=1
+print(dic)
