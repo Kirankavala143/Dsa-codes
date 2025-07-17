@@ -154,3 +154,39 @@ stones="aAAbbbb"
 #     else:
 #         ans+=dic[i]
 # print(ans)
+
+# majority of element
+nums=[3,2,3]
+for i in nums:
+    count=0
+    for j in nums:
+        if i==j:
+            count+=1
+    if count>len(nums)//2:
+        print(i)
+
+
+# 169
+# dic={}
+# for i in nums:
+#     if i in dic:
+#         dic[i]+=1
+#     else:
+#         dic[i]=1
+# for i in dic:
+#     if dic[i]>len(nums)//2:
+#         print(i)
+
+
+# 229
+#  dic={}
+#         for i in nums:
+#             if i in dic:
+#                 dic[i]+=1
+#             else:
+#                 dic[i]=1
+#         result=[]
+#         for i in dic:
+#             if dic[i]> len(nums)//3:
+#                 result.append(i)
+#         return result
