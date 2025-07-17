@@ -136,12 +136,21 @@ stones="aAAbbbb"
     #         return '.'
 
 
-key = "the quick brown fox jumps over the lazy dog"
-#  message = "vkbs bs t suepuv"
-dic={}
-temp=1
-for i in key:
-    if i not in dic:
-        dic[i]=temp
-        temp+=1
-print(dic)
+# 2325
+# key = "the quick brown fox jumps over the lazy dog"
+# # message = "vkbs bs t suepuv"
+# dic={}
+# temp=97
+# for i in key:
+#     if i!=" " and i not in dic:
+#         dic[i]=chr(temp)
+#         temp+=1
+# print(dic)
+# message = "vkbs bs t suepuv"
+# ans=""
+# for i in message:
+#     if i==" ":
+#         ans+=" "
+#     else:
+#         ans+=dic[i]
+# print(ans)
