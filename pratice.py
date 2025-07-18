@@ -100,4 +100,99 @@ print(reverse_pairs((5, 6, 7, 8, 9, 10)))  # Output: (6, 5, 8, 7, 10, 9)
 # print(result)
 
 
+# Question 6
+# Title: Filter Positive Numbers from Tuple
+
+# Problem Statement:
+# Given a tuple of integers, filter out all negative numbers and print a tuple containing only the positive values.
+
+# tuple1 = tuple(map(int, input().split()))
+# filtered_tuple = tuple(filter(lambda x: x > 0, tuple1))
+# print(filtered_tuple)
+
+# Question 7
+# Title: Create Tuple from First N Natural Numbers
+
+# Problem Statement:
+# Given a number N, create a tuple that contains the first N natural numbers (starting from 1).
+
+# n = int(input())
+# tuple1 = tuple(range(1, n + 1))
+# print(tuple1)
+
+# Question 8
+# Title: Count Even and Odd Numbers in Tuple
+# Problem Statement:
+# Given a tuple of integers, count how many even and how many odd numbers it contains.
+
+# tuple1 = tuple(map(int, input().split()))
+# even_count = len(list(filter(lambda x: x % 2 == 0, tuple1)))
+# odd_count = len(list(filter(lambda x: x % 2 != 0, tuple1)))
+# print("Even count:", even_count)
+# print("Odd count:", odd_count)
+
+#another way
+# a=tuple(map(int,input().split()))
+# even=0
+# odd=0
+# for i in a:
+#     if i%2==0:
+#         even+=1
+#     else:
+#         odd+=1
+# print(even,odd)
+
+# Question 9
+# Title: Multiply All Elements of Tuple# Problem Statement:
+# You are given a tuple of integers. Write a program to compute the product of all elements in the tuple.
+
+# tuple1 = tuple(map(int, input().split()))
+# product = 1
+# for i in tuple1:
+#     product *= i
+# print(product)
+
+# Question 10
+# Title: Find the Minimum and Maximum Elements in a Tuple   
+# Problem Statement:
+# You are given a tuple of integers. Write a program to find the minimum and maximum elements in the tuple.
+
+# tuple1 = tuple(map(int, input().split()))
+# min_element = min(tuple1)
+# max_element = max(tuple1)
+# print("Minimum element:", min_element)
+# print("Maximum element:", max_element)    
+
+# Question 10
+# Title: Remove First and Last Element of Tuple
+# Problem Statement:
+# Given a tuple, create a new tuple after removing the first and last elements.
+
+# tuple1 = tuple(map(int, input().split()))
+# new_tuple = tuple1[1:-1]
+# print(new_tuple)
+
+# Title: Create Tuple from User-defined Range
+
+# Problem Statement:
+# Given two integers start and end, create a tuple of numbers from start to end (inclusive).
+
+# start = int(input())
+# end = int(input())
+# tuple1 = tuple(range(start, end + 1))
+# print(tuple1)
+
+# Question 12
+# Title: Find Tuple Element with Maximum Frequency
+# Problem Statement:
+# Given a tuple of values, find and print the element that appears most frequently.
+
+# tuple1 = tuple( input().split())
+# max_count = max(tuple1, key=tuple1.count)
+# print(max_count)
+
+# a=tuple(input().split())
+# for i in dict.fromkeys(a):
+#     print(f"{i}:{a.count(i)}")
+
 
