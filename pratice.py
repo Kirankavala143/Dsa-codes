@@ -18,15 +18,13 @@
 # numbers=(1,2,3,4,5)
 # print(sqauree(numbers))
 
-a=tuple(map(int,input().split()))
-b=tuple(filter(lambda x:x%2!=0,a))
-print(b)
 
 # You are given a tuple of integers. Your task is to remove all even numbers and return a tuple with only odd numbers.
+# filter()-returns elements lambda return bool values
 
-# tuple1 = tuple(map(int, input().split()))
-# tuple2 = tuple(filter(lambda x: x % 2 != 0, tuple1))
-# print(tuple2)
+# a=tuple(map(int,input().split()))
+# b=tuple(filter(lambda x:x%2!=0,a))
+# print(b)
 
 # another method
 # def odd(num):
