@@ -73,8 +73,31 @@
 # Problem Statement:
 # Given a tuple of integers, find and print the second largest element.
 
-tuple1 = tuple(map(int, input().split()))
-sorted_tuple = sorted(tuple1, reverse=True)
-print(sorted_tuple)
-second_largest = sorted_tuple[1]
-print(second_largest)
+# tuple1 = tuple(map(int, input().split()))
+# sorted_tuple = sorted(tuple1, reverse=True)
+# second_largest = sorted_tuple[1]
+# print(second_largest)
+
+# Question 5
+# Title: Tuple Elements in Reverse Pairs
+
+# Problem Statement:
+# Given a tuple of even number of elements, group them into pairs and reverse each pair.
+def reverse_pairs(tup):
+    # Group into pairs using zip and unpacking
+    pairs = list(zip(tup[::2], tup[1::2]))  # [(1,2), (3,4), ...] even
+    result = [i for a, b in pairs for i in (b, a)]
+    
+    return tuple(result)
+
+print(reverse_pairs((1, 2, 3, 4)))         # Output: (2, 1, 4, 3)
+print(reverse_pairs((5, 6, 7, 8, 9, 10)))  # Output: (6, 5, 8, 7, 10, 9)
+
+# numbers = tuple(map(int, input().split()))
+# result = ()
+# for i in range(0, len(numbers), 2):
+#     result += (numbers[i+1], numbers[i])
+# print(result)
+
+
+
