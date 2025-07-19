@@ -1,4 +1,5 @@
-(map(int, input().split()))
-filtered_tuple = tuple(filter(lambda x: x > 0, tuple1))
-print(filtered_tuple)
-
+nums = [1, 2, 3, 4, 5]
+result = []
+for num in nums:
+    result.append(num + 1)
+print(result)

@@ -15,8 +15,9 @@
 # print(int(''.join(a),2))
 
 # moduls
-nums=tuple(map(int,input().split()))
-res=nums[0]
-for i in nums[1:]:
-    res %=i 
-print(res)
+# nums=tuple(map(int,input().split()))
+# res=nums[0]
+# for i in nums[1:]:
+#     res %=i 
+# print(res)
+
