@@ -4,7 +4,7 @@
 #         print("tree",j)
 #     print(i,"Exited")
 
-
+# 2114
 # s = ["one problem a day", "hi this is kiran kumar", "hello welcome"]
 # max=0
 # for sentence in s:
@@ -13,20 +13,29 @@
 #         max=c
 # print(max)
 
-li = ["one problem a day", "hi this is kiran", "hello welcome"]
-for j in range(len(li)):
-    s = li[j]          # Get the j-th sentence
-    temp = 1          # Start with 1 word
-    for i in range(len(s)):  
-        ch=s[i]    # Loop through each character in the sentence
-        if ch == " ":
-            temp += 1
-    print(temp)
+# s=["hi", "This is kiram from csm","to get a job"]
+# ans=0
+# for i in range(len(s)):
+#     a=s[i]
+#     # print(a)
+#     temp=1
+#     for j in range(len(a)):
+#         ch=a[j]
+#         if ch == " ":
+#             temp=temp+1
+#     ans=max(ans,temp)
+# print(ans)
 
 
+# for i in range(1, 3):
+#     for j in range(1, 3):
+#         # print(i, j)
+#         for k in range(1, 3):
+#             print(i, j, k) 
 
 
-
-
-
+# for i in range(1,9):
+#     for j in range(i+1):
+#         print(i,end=" ")
+#     print()
 

@@ -209,3 +209,13 @@ for i in nums:
 
 #         return True
 
+
+# 2114
+
+# s = ["one problem a day", "hi this is kiran kumar", "hello welcome"]
+# max=0
+# for sentence in s:
+#     c=len(sentence.split())
+#     if max<c:
+#         max=c
+# print(max)
