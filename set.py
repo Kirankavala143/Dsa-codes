@@ -31,11 +31,19 @@
 # print(duplicate)
 
 
-n=[1,2,2,4]
-n=len(n)
-for i in range(n):
-    for j in range(i,n):
-        print(i,j)
+
+
+
+
+
+
+
+
+# n=[1,2,2,4]
+# n=len(n)
+# for i in range(n):
+#     for j in range(i,n):
+#         print(i,j)
 
 
 
