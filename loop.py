@@ -1,55 +1,32 @@
-for i in range(3):
-    print(i,"kiran wants to grow a tree")
-    for j in range(2):
-        print("tree",j)
-    print(i,"Exited")
-
-s=["one problem a day", "hi this is kiran","hello,welcome"]
-for j in range(len(s)):
-    a=s[j]
-    print(a)
-# temp=1
-# for i in range(len(s)):
-#     ch=s[i]
-#     if ch==" ":
-#         temp=temp+1
-# print(temp)
+# for i in range(3):
+#     print(i,"kiran wants to grow a tree")
+#     for j in range(2):
+#         print("tree",j)
+#     print(i,"Exited")
 
 
-
-
-
-
-
-
-# # highest length of sentence
-# l=["hi this kiran, hello welcome all this is me,hello kiran"]  
+# s = ["one problem a day", "hi this is kiran kumar", "hello welcome"]
 # max=0
-# for i in l:
-#     if len(i)>max:
-#         max=len(i)
-# print(max  )
-
-# # Maximum Number of Words Found in Sentences
-
-# l=["hi this kiran, hello welcome all this is me,hello kiran"]  
-# max=0
-# for i in l:
-#     if len(i.split())>max:
-#         max=len(i.split())
+# for sentence in s:
+#     c=len(sentence.split())
+#     if max<c:
+#         max=c
 # print(max)
 
-# # Input: sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
-# # Output: 6
-# # Explanation: 
-# # - The first sentence, "alice and bob love leetcode", has 5 words in total.
-# # - The second sentence, "i think so too", has 4 words in total.
-# # - The third sentence, "this is great thanks very much", has 6 words in total.
-# # Thus, the maximum number of words in a single sentence comes from the third sentence, which has 6 words.
+li = ["one problem a day", "hi this is kiran", "hello welcome"]
+for j in range(len(li)):
+    s = li[j]          # Get the j-th sentence
+    temp = 1          # Start with 1 word
+    for i in range(len(s)):  
+        ch=s[i]    # Loop through each character in the sentence
+        if ch == " ":
+            temp += 1
+    print(temp)
 
-# l=["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
-# max=0
-# for i in l:
-#     if len(i.split())>max:
-#         max=len(i.split())
-# print(max)
+
+
+
+
+
+
+
