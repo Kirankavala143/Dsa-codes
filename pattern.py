@@ -39,11 +39,34 @@ for i in range(r):
 #             print(" ",end="")
 #     print()
 
-r=6
-c=6
-for i in range(r):
-    for j in range(1,i):
-        print("*",end="")
-    for k in range(c-i):
-        print("*",end="")
-    print()
+
+# # rhombus
+# r=6
+# c=3
+# c1=r-1
+# for i in range(r):
+#     for j in range(c1-i):
+#         print("*",end="")
+#     for k in range(c):
+#         print("-",end="")
+#     print()
+
+# r=5
+# # c=5
+# for i in range(r+1):
+#     for j in range(c-i):
+#         print(" ",end="")
+#     for k in range(c):
+#         print("-",end="")
+#     print()
+
+# print("reverse rhombus")
+
+# r=5
+# c=5
+# for i in range(r):
+#     for j in range(i+1):
+#         print(" ",end="")
+#     for k in range(c):
+#         print("-",end="")
+#     print()
