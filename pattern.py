@@ -39,3 +39,9 @@ for i in range(r):
 #             print(" ",end="")
 #     print()
 
+r=6
+c=6
+for i in range(r):
+    for j in range(c-i):
+        print("*",end="")
+    print()
