@@ -221,3 +221,50 @@ print(reverse_pairs((5, 6, 7, 8, 9, 10)))  # Output: (6, 5, 8, 7, 10, 9)
 #     res %=i 
 # print(res)
 
+# Python program to find tuples which have all elements divisible by K from a list of tuples
+# Input : test_list = [(6, 24, 12), (60, 12, 6), (12, 18, 21)], K = 6
+
+# Output : [(6, 24, 12), (60, 12, 6)]
+
+# test_list = [(6, 24, 12), (60, 12, 6), (12, 18, 21)]
+# K = 6
+# result = [t for t in test_list if all(t[i] % K == 0 for i in range(len(t)))]
+# print(result)
+
+# another way
+# test_list = [(6, 24, 12), (60, 12, 6), (12, 18, 21)]
+# K = 6
+# result = []
+# for t in test_list:
+#     if all(t[i] % K == 0 for i in range(len(t))):
+#         result.append(t)
+# print(result)
+
+l=[]
+n=int(input())
+for i in range(n):
+    l.append(tuple(map(int,input().split())))
+k=int(input())
+for i in l:
+    if all(i[j]%k==0 for j in range(len(i))):
+        print(*i)
+
+test_list = []
+n = int(input())
+
+for i in range(n):
+    element = list(map(int, input().split()))
+    test_list.append(tuple(element))  # FIXED this line
+k = int(input())
+res = []
+for tup in test_list:
+    if all(element % k == 0 for element in tup):  # FIXED spacing
+        res.append(tup)
+for t in res:
+    print(*t)
+
+
+
+
+
+

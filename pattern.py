@@ -42,6 +42,8 @@ for i in range(r):
 r=6
 c=6
 for i in range(r):
-    for j in range(c-i):
+    for j in range(1,i):
+        print("*",end="")
+    for k in range(c-i):
         print("*",end="")
     print()
