@@ -82,14 +82,41 @@ for i in range(r):
 #         print("*",end="")
 #     print()
 
-r=3
-n=r-1
+# reverse
+# r=5
+# n=r-1
+# for i in range(r-1,-1,-1):
+#     for j in range(n-i):
+#         print(" ",end="")
+#     temp=i*2+1
+#     for k in range(temp):
+#         print("*",end="")
+#     print()
 
-for i in range(r):
-    for j in range(0,i+1):
-        print(" ",end="")
-    for k in range(2*r-1-(2*i)):
-        print("*",end="")
-    print()
+# r=5
+# n=r-1
+# for i in range(r):
+#     for j in range(i):
+#         print(" ",end="")
+#     for k in range(2*r-1-(2*i)):
+#         print("*",end="")
+#     print()
 
-    5-2
+# ben 10 watch
+# r=5
+# n=r-1
+# for i in range(r-1,-1,-1):
+#     for j in range(n-i):
+#         print(" ",end="")
+#     temp=i*2+1
+#     for k in range(temp):
+#         print("*",end="")
+#     print()
+# for i in range(1,r):
+#     for j in range(n-i):
+#         print(" ",end="")
+#     temp=i*2+1
+#     for k in range(temp):
+#         print("*",end="")
+#     print()
+
