@@ -135,10 +135,6 @@ for i in range(r-1,-1,-1):
 #     print()
 
 
-
-
-
-
 # r=4
 # n=r-1
 # for i in range(r,-1,-1):
@@ -151,4 +147,29 @@ for i in range(r-1,-1,-1):
 #         else:
 #             print(" ",end="")
 #     print()
+
+r=4
+n=r-1
+
+for i in range(r-1):
+    for j in range(n-i):
+        print(" ",end="")
+    temp=i*2+1
+    for j in range(temp):
+        if j==0 or j==i*2 or i==r-1:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+for i in range(r-1,-1,-1):
+    for j in range(n-i):
+        print(" ",end="")
+    temp=i*2+1
+    for j in range(temp):
+        if j==0 or j==i*2 :
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()
+
 
