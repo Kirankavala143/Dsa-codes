@@ -44,11 +44,18 @@
 #         print("*",end="")
 #     print()
 
-li=[1,33,56]
-n=len(li)
-for i in range(n):
-    for j in range(i,n):
-        temp=[]
-        for k in range(i,j+1):
-            temp.append(li[k])
-        print(temp)
+# li=[1,33,56]
+# n=len(li)
+# for i in range(n):
+#     for j in range(i,n):
+#         temp=[]
+#         for k in range(i,j+1):
+#             temp.append(li[k])
+#         print(temp)
+
+# hello 
+
+for i in range(3):
+    for j in range(3):
+        print("*",end="")
+    print()
