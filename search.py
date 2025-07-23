@@ -34,6 +34,13 @@ for i in range(n-1):
             arr[j],arr[j+1]=arr[j+1],arr[j]
 print(arr)
 
+s=[5,9,1,8,7]
+n=len(s)
+for i in range(n):
+    for j in range(i+1,n):
+        if s[i]<s[j]:
+            s[i],s[j]=s[j],s[i]
+print(s)
 # decending order
 arr=[3,24,7,87,5,9,78]
 n=len(arr)
