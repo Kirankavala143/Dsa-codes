@@ -33,6 +33,39 @@
 # else:
 #     print("false")
 
-a=list(map(str,input().split()))
-print("contents of list:",*a)
-print(len(a))
+# a=list(map(str,input().split()))
+# print("contents of list:",*a)
+# print(len(a))
+
+
+
+# Extract unique digits from tuple list
+
+# n = int(input())
+# digits = set()
+
+# for _ in range(n):
+#     a, b = input().split()
+#     digits.update(a)
+#     digits.update(b)
+
+# # Filter only digits (in case of any non-digit input)
+# unique_digits = sorted(set(filter(str.isdigit, digits)))
+
+# print("The extracted digits :", ' '.join(unique_digits))
+
+
+n = int(input())  # number of tuples
+digits = set()    # to store unique digits
+
+for _ in range(n):
+    a, b = map(int, input().split())
+    
+    # Convert both numbers to strings and iterate over each digit
+    for num in (a, b):
+        for ch in str(num):
+            digits.add(int(ch))  # add digit to the set
+
+# Sort the digits and print them
+sorted_digits = sorted(digits)
+print("The extracted digits :", *sorted_digits)
