@@ -45,9 +45,10 @@
 #     print()
 
 
-# SUB ARRAY [1,33,56]
+# SUB ARRAY [1,33,56]  CONSIDER LINE
 # [1], [1,33], [1,33,56], [33], [33,56], [56]
 # SUB STRING "abc"
+# SUB SEQUENCE [1,2,3]   NOT CONSIDER LINE ( FOLLOWS ORDER OF INDEX(CAN SKIP BETWEEN ELEMENT))
 
 
 
@@ -59,6 +60,17 @@
 #         temp=[]
 #         for k in range(i,j+1):
 #             temp.append(li[k])
+#         ans.append(temp)
+# print(ans)
+
+# s="abc"
+# n=len(s)
+# ans=[]
+# for i in range(n+1):
+#     for j in range(i,n):
+#         temp=[]
+#         for k in range(i,j+1):
+#             temp.append(s[k])
 #         ans.append(temp)
 # print(ans)
 
