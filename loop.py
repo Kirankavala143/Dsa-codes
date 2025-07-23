@@ -44,18 +44,21 @@
 #         print("*",end="")
 #     print()
 
+
+# SUB ARRAY [1,33,56]
+# [1], [1,33], [1,33,56], [33], [33,56], [56]
+# SUB STRING "abc"
+
+
+
 # li=[1,33,56]
 # n=len(li)
+# ans=[]
 # for i in range(n):
 #     for j in range(i,n):
 #         temp=[]
 #         for k in range(i,j+1):
 #             temp.append(li[k])
-#         print(temp)
+#         ans.append(temp)
+# print(ans)
 
-# hello 
-
-for i in range(3):
-    for j in range(3):
-        print("*",end="")
-    print()
