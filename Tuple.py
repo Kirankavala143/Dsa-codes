@@ -83,15 +83,15 @@
 
 # Problem Statement:
 # Given a tuple of even number of elements, group them into pairs and reverse each pair.
-def reverse_pairs(tup):
-    # Group into pairs using zip and unpacking
-    pairs = list(zip(tup[::2], tup[1::2]))  # [(1,2), (3,4), ...] even
-    result = [i for a, b in pairs for i in (b, a)]
+# def reverse_pairs(tup):
+#     # Group into pairs using zip and unpacking
+#     pairs = list(zip(tup[::2], tup[1::2]))  # [(1,2), (3,4), ...] even
+#     result = [i for a, b in pairs for i in (b, a)]
     
-    return tuple(result)
+#     return tuple(result)
 
-print(reverse_pairs((1, 2, 3, 4)))         # Output: (2, 1, 4, 3)
-print(reverse_pairs((5, 6, 7, 8, 9, 10)))  # Output: (6, 5, 8, 7, 10, 9)
+# print(reverse_pairs((1, 2, 3, 4)))         # Output: (2, 1, 4, 3)
+# print(reverse_pairs((5, 6, 7, 8, 9, 10)))  # Output: (6, 5, 8, 7, 10, 9)
 
 # numbers = tuple(map(int, input().split()))
 # result = ()
@@ -240,31 +240,53 @@ print(reverse_pairs((5, 6, 7, 8, 9, 10)))  # Output: (6, 5, 8, 7, 10, 9)
 #         result.append(t)
 # print(result)
 
-l=[]
-n=int(input())
-for i in range(n):
-    l.append(tuple(map(int,input().split())))
-k=int(input())
-for i in l:
-    if all(i[j]%k==0 for j in range(len(i))):
-        print(*i)
+# l=[]
+# n=int(input())
+# for i in range(n):
+#     l.append(tuple(map(int,input().split())))
+# k=int(input())
+# for i in l:
+#     if all(i[j]%k==0 for j in range(len(i))):
+#         print(*i)
 
-test_list = []
+# test_list = []
+# n = int(input())
+
+# for i in range(n):
+#     element = list(map(int, input().split()))
+#     test_list.append(tuple(element))  # FIXED this line
+# k = int(input())
+# res = []
+# for tup in test_list:
+#     if all(element % k == 0 for element in tup):  # FIXED spacing
+#         res.append(tup)
+# for t in res:
+#     print(*t)
+
+
+
+
+
+
+# n=int(input())
+# l=[tuple(map(int,input().split())) for i in range(n)]
+# k=int(input())
+# for t in l:
+#     if all(x%k==0 for x in t):
+#         print(*t)
+
+# filter the postive number using list comprehension
+# n=int(input())
+# l=list(map(int,input().split()))
+# l=[x for x in l if x>0]
+# print(*l)
+
+# sort a dictionary by keys
 n = int(input())
+data = {}
+for _ in range(n):
+    name, score = input().split()
+    data[name] = int(score)
 
-for i in range(n):
-    element = list(map(int, input().split()))
-    test_list.append(tuple(element))  # FIXED this line
-k = int(input())
-res = []
-for tup in test_list:
-    if all(element % k == 0 for element in tup):  # FIXED spacing
-        res.append(tup)
-for t in res:
-    print(*t)
-
-
-
-
-
-
+for name in sorted(data):
+    print(f"{name}: {data[name]}")

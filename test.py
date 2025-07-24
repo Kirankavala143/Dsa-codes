@@ -55,17 +55,26 @@
 # print("The extracted digits :", ' '.join(unique_digits))
 
 
-n = int(input())  # number of tuples
-digits = set()    # to store unique digits
+# n = int(input())  # number of tuples
+# digits = set()    # to store unique digits
 
-for _ in range(n):
-    a, b = map(int, input().split())
+# for _ in range(n):
+#     a, b = map(int, input().split())
     
-    # Convert both numbers to strings and iterate over each digit
-    for num in (a, b):
-        for ch in str(num):
-            digits.add(int(ch))  # add digit to the set
+#     # Convert both numbers to strings and iterate over each digit
+#     for num in (a, b):
+#         for ch in str(num):
+#             digits.add(int(ch))  # add digit to the set
 
-# Sort the digits and print them
-sorted_digits = sorted(digits)
-print("The extracted digits :", *sorted_digits)
+# # Sort the digits and print them
+# sorted_digits = sorted(digits)
+# print("The extracted digits :", *sorted_digits)
+
+# sum of all values in dictionary by taking user input
+
+n = int(input())
+d = {}
+for i in range(n):
+    key, values = input().split()
+    d[key] = int(values) 
+print(sum(d.values()))
