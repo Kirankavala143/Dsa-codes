@@ -62,3 +62,27 @@ for r in range(n):
         print(window_sum)
         window_sum -= s[l]  # remove leftmost
         l += 1
+# 1876
+s="xyzzaz"
+n=len(s)
+ans=0
+for i in range(n):
+    for j in range(i,n):
+        temp=[]
+        tsum=0
+        for k in range(i,j+1):
+            temp.append(s[k])
+            a=set(temp)
+        if len(a)==3 and len(temp)==3:
+            ans+=1
+print(ans)
+            
+
+
+
+
+
+
+
+
+
