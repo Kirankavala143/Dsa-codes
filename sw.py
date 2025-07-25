@@ -62,38 +62,3 @@ for r in range(n):
         print(window_sum)
         window_sum -= s[l]  # remove leftmost
         l += 1
-
-# sort dictionary by keys
-d = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
-sorted_d = dict(sorted(d.items()))
-
-# input first line number next line inputs
-
-# sort dictionary by values
-d = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
-sorted_d = dict(sorted(d.items(), key=lambda item: item[1]))
-
-# find max and min in a set
-
-# find max and min in a list
-# n=int(input())
-# l=list(map(int,input().split()))
-# print(max(l))
-# print(min(l))
-
-
-
-# l = [1, 2, 3, 4, 5]
-# max_val = max(l)
-# min_val = min(l)
-
-# square even numbers using list comprehension
-# n=int(input())
-# l=list(map(int,input().split()))
-# even_squares = [x**2 for x in l if x % 2 == 0]
-# print(*even_squares)
-
-
-
-        
-
