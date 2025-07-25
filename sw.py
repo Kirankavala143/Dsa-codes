@@ -98,4 +98,3 @@ for r in range(n):
         ans+=1
 print(ans)
 
-

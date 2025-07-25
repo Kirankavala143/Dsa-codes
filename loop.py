@@ -74,3 +74,16 @@ for i in range(n+1):
         ans.append(temp)
 print(ans)
 
+# print a to z
+
+# for i in range(97,123):
+#     print(chr(i),end=" ")
+
+# another way
+# for i in range(ord('a'),ord('z')+1):
+#     print(chr(i),end=" ")
+
+# another way
+a=ascii
+for i in a:
+    print(i,end=" ")
