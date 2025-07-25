@@ -63,26 +63,39 @@ for r in range(n):
         window_sum -= s[l]  # remove leftmost
         l += 1
 # 1876
+# s="xyzzaz"
+# n=len(s)
+# ans=0
+# for i in range(n):
+#     for j in range(i,n):
+#         temp=[]
+#         tsum=0
+#         for k in range(i,j+1):
+#             temp.append(s[k])
+#             a=set(temp)
+#         if len(a)==3 and len(temp)==3:
+#             ans+=1
+# print(ans)
+
+# optimize    
 s="xyzzaz"
 n=len(s)
 ans=0
-for i in range(n):
-    for j in range(i,n):
-        temp=[]
-        tsum=0
-        for k in range(i,j+1):
-            temp.append(s[k])
-            a=set(temp)
-        if len(a)==3 and len(temp)==3:
-            ans+=1
+dic={}
+l=0
+k=3
+for r in range(n):
+    if s[r] in dic:
+        dic[s[r]] +=1
+    else:
+        dic[s[r]] = 1
+    if r-l ==3:
+        dic[s[l]] -=1
+    if dic[s[l]]==0:
+        dic.pop(s[l])
+        l+=1
+    if len(dic)==3:
+        ans+=1
 print(ans)
-            
-
-
-
-
-
-
-
 
 
