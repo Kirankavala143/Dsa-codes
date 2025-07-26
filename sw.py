@@ -78,23 +78,33 @@ for r in range(n):
 # print(ans)
 
 # optimize    
-s="xyzzaz"
-n=len(s)
-ans=0
-dic={}
-l=0
-k=3
-for r in range(n):
-    if s[r] in dic:
-        dic[s[r]] +=1
-    else:
-        dic[s[r]] = 1
-    if r-l ==3:
-        dic[s[l]] -=1
-    if dic[s[l]]==0:
-        dic.pop(s[l])
-        l+=1
-    if len(dic)==3:
-        ans+=1
-print(ans)
+# s="xyzzaz"
+# n=len(s)
+# ans=0
+# dic={}
+# l=0
+# k=3
+# for r in range(n):
+#     if s[r] in dic:
+#         dic[s[r]] +=1
+#     else:
+#         dic[s[r]] = 1
+#     if r-l ==3:
+#         dic[s[l]] -=1
+#     if dic[s[l]]==0:
+#         dic.pop(s[l])
+#         l+=1
+#     if len(dic)==3:
+#         ans+=1
+# print(ans)
+# a=[9,6,3,7,5,1]
+# n=len(a)
+# for i in range(n):
+#     for j in range(i,n):
+        
+
+
+
+
+
 
