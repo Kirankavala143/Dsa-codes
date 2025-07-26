@@ -19,7 +19,38 @@ sorted_d = dict(sorted(d.items()))
 # print(*even_squares)
 
 
+# find the range (max-min) using args:
+def range(*args):
+    return max(args) - min(args)
+
+l=list(map(int,input().split()))
+print(max(l)-min(l))
 
 
         
 
+# print all posttive number from list
+# n=int(input())
+# l=list(map(int,input().split()))
+# l=[x for x in l if x>0]
+# print(*l)
+
+# reverse a list
+# n=int(input())
+# l=list(map(int,input().split()))
+# l.reverse()
+# print(*l)
+
+# another way
+# n=int(input())
+# l=list(map(int,input().split()))
+# l=l[::-1]
+# print(*l)
+
+# count digits
+# n=int(input())
+# l=list(map(int,input().split()))
+# count=0
+# for i in l:
+#     count+=1
+# print(count)
