@@ -20,11 +20,11 @@ sorted_d = dict(sorted(d.items()))
 
 
 # find the range (max-min) using args:
-def range(*args):
-    return max(args) - min(args)
+# def range(*args):
+#     return max(args) - min(args)
 
-l=list(map(int,input().split()))
-print(max(l)-min(l))
+# l=list(map(int,input().split()))
+# print(max(l)-min(l))
 
 
         
@@ -54,3 +54,26 @@ print(max(l)-min(l))
 # for i in l:
 #     count+=1
 # print(count)
+
+# automorphic number:
+
+n = int(input())
+s = n ** 2
+if str(s).endswith(str(n)):
+    print("Automorphic")
+else:
+    print("Not Automorphic")
+
+
+# l=list(map(int,input().split()))
+# for i in l:
+#     if i**2==n:
+#         print("Automorphic")
+#     else:
+#         print("Not Automorphic")
+
+# another way
+if n**2==s:
+    print("Automorphic")
+else:
+    print("Not Automorphic")

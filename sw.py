@@ -99,7 +99,7 @@ for r in range(n):
 # print(ans)
 
 # 1984
-l=[9,4,1,7]
+# l=[9,4,1,7]
 # l.sort()
 # n=len(l)
 # k=3
@@ -115,9 +115,25 @@ l=[9,4,1,7]
 #             ans=min(ans,last-first)
 # print(ans)
 
+# OPTIMAL SLIDING WINDOW
+# 1.VARAIBLE INCREMENT    
+# 2.L INCREMENT
+# 3.UPDATE ANS    
 
-        
+nums=[3,4,8,1,5]
+nums.sort()
+n=len(nums)
+k=3
+l=0
+ans=float('inf')
+for r in range(n):
 
+    if (r-l==k): #array elements = 3 , increment
+        l+=1
+    if (r-l+1 == k): #len size =k
+
+        ans=min(ans,nums[r]-nums[l])
+print(ans)
 
 
 
