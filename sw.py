@@ -97,10 +97,9 @@ for r in range(n):
 #     if len(dic)==3:
 #         ans+=1
 # print(ans)
-# a=[9,6,3,7,5,1]
-# n=len(a)
-# for i in range(n):
-#     for j in range(i,n):
+
+        
+
         
 
 
