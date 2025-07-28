@@ -98,7 +98,23 @@ for r in range(n):
 #         ans+=1
 # print(ans)
 
-        
+# 1984
+l=[9,4,1,7]
+# l.sort()
+# n=len(l)
+# k=3
+# ans=float('inf')
+# for i in range(n):
+#     for j in range(i,n):
+#         temp=[]
+#         for m in range(i,j+1):
+#             temp.append(l[m])
+#         if len(temp) == k:
+#             last=temp[2] 
+#             first=temp[0]
+#             ans=min(ans,last-first)
+# print(ans)
+
 
         
 
