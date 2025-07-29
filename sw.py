@@ -136,6 +136,29 @@ for r in range(n):
 print(ans)
 
 
+# 561
+# l=[6,2,6,5,1,2]
+# l.sort()
+# n=len(l)
+# ans=0
+# for i in range(0,n,2):
+#     ans+=l[i]
+# print(ans)
 
-
+# 2144
+l=[1,2,3]
+l.sort(reverse=True)
+n=len(l)
+ans=0
+# took=0
+for i in range(n):
+#     if took==2:
+#         took=0
+#     else:
+#         ans+=l[i]
+#         took+=1
+# print(ans)
+    if i%3!=2:
+        ans+=l[i]
+print(ans)
 

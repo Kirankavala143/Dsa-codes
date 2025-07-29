@@ -57,7 +57,7 @@ sorted_d = dict(sorted(d.items()))
 
 # automorphic number:
 
-n = int(input())
+n= int(input())
 s = n ** 2
 if str(s).endswith(str(n)):
     print("Automorphic")
@@ -65,15 +65,3 @@ else:
     print("Not Automorphic")
 
 
-# l=list(map(int,input().split()))
-# for i in l:
-#     if i**2==n:
-#         print("Automorphic")
-#     else:
-#         print("Not Automorphic")
-
-# another way
-if n**2==s:
-    print("Automorphic")
-else:
-    print("Not Automorphic")
