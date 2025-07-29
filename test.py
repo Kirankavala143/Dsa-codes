@@ -72,9 +72,19 @@
 
 # sum of all values in dictionary by taking user input
 
+# n = int(input())
+# d = {}
+# for i in range(n):
+#     key, values = input().split()
+#     d[key] = int(values) 
+# print(sum(d.values()))
+
+# sort keys in ascending order print values too
+
 n = int(input())
 d = {}
 for i in range(n):
     key, values = input().split()
     d[key] = int(values) 
-print(sum(d.values()))
+for name in sorted(d.keys()):
+    print(f"{name}: {d[name]}")
