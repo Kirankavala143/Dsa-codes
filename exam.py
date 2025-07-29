@@ -57,11 +57,13 @@ sorted_d = dict(sorted(d.items()))
 
 # automorphic number:
 
-n= int(input())
-s = n ** 2
-if str(s).endswith(str(n)):
-    print("Automorphic")
-else:
-    print("Not Automorphic")
+# n= int(input())
+# s = n ** 2
+# if str(s).endswith(str(n)):
+#     print("Automorphic")
+# else:
+#     print("Not Automorphic")
 
+n=int(input())
+l=list(map(int,input().split()))
 
