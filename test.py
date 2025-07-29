@@ -88,3 +88,16 @@ for i in range(n):
     d[key] = int(values) 
 for name in sorted(d.keys()):
     print(f"{name}: {d[name]}")
+
+n = int(input())
+a = input()
+b = input()
+
+result = ""
+for i in range(n):
+    if a[i] == b[i]:
+        result += "0"
+    else:
+        result += "1"
+
+print(result)
