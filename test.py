@@ -133,10 +133,8 @@
 
 
 # sum of digits
-# n = int(input())
-# total = 0
-# for i in str(n):
-#     total += int(i)
-# print(total)
-
-n=int(input())
+n = int(input())
+total = 0
+for i in str(n):
+    total += 1
+print(total)

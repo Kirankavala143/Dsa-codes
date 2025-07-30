@@ -136,6 +136,22 @@ for r in range(n):
 print(ans)
 
 
+#643  sum of subarray
+# l=[5]
+# n=len(l)
+# temp=0
+# left=0
+# k=1
+# ans=float('-inf')
+# for r in range(n):
+#     temp+=l[r]
+#     if (r-left== k):  #move l to front and decrement the lastelement 
+#         temp-=l[left]
+#         left+=1
+#     if (r-left+1 ==k): # 
+#         ans=max(ans,temp)
+# print(ans/4)
+
 # 561
 # l=[6,2,6,5,1,2]
 # l.sort()
