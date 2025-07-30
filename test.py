@@ -81,24 +81,51 @@
 
 # sort keys in ascending order print values too
 
-n = int(input())
-d = {}
-for i in range(n):
-    key, values = input().split()
-    d[key] = int(values) 
-for name in sorted(d.keys()):
-    print(f"{name}: {d[name]}")
+# n = int(input())
+# d = {}
+# for i in range(n):
+#     key, values = input().split()
+#     d[key] = int(values) 
+# for name in sorted(d.keys()):
+#     print(f"{name}: {d[name]}")
 
-n = int(input())
-a = input()
-b = input()
+# n = int(input())
+# a = input()
+# b = input()
 
-result = ""
-for i in range(n):
-    if a[i] == b[i]:
-        result += "0"
-    else:
-        result += "1"
+# result = ""
+# for i in range(n):
+#     if a[i] == b[i]:
+#         result += "0"
+#     else:
+#         result += "1"
 
-print(result)
+# print(result)
 
+# print 1 letter of the words
+# a=input().split()
+# for i in a:
+#     print(i[0])
+
+# neon number
+# n = int(input())
+# square = n ** 2
+# total = 0
+# for digit in str(square):
+#     total += int(digit)
+
+# if total == n:
+#     print("Neon Number")
+# else:
+#     print("Not Neon Number")
+
+# perfect number
+# n = int(input())
+# total = 0
+# for i in range(1, n):
+#     if n % i == 0:
+#         total += i
+# if total == n:
+#     print("Perfect Number")
+# else:
+#     print("Not Perfect Number")
