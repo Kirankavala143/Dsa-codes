@@ -152,6 +152,33 @@ print(ans)
 #         ans=max(ans,temp)
 # print(ans/4)
 
+
+haystack = "sadbutsad"
+needle = "sad"
+n=len(needle)
+left=0
+temp=0
+for r in range(n):
+    if haystack[r]==needle[r]:
+        temp+=1
+    if temp==n:
+        left=r-n+1
+        break
+    print(left)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 561
 # l=[6,2,6,5,1,2]
 # l.sort()

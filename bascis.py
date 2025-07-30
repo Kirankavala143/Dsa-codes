@@ -15,4 +15,14 @@
 # n = int(input())
 # print(sum_digit(n))
 
+# no of digits
+n=543654
+n=str(n)
+print(len(n))
+
+#  Print Binary Equivalent of a Number
+
+# n = int(input())
+# a=bin(n)
+# print(a[2:])
 
