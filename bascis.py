@@ -106,3 +106,62 @@
 #     print("armstrong")
 # else:
 #     print("not armstrong")
+
+# fibnoacci number
+# n=10
+# a,b=0,1
+# for i in range(n):
+#     print(a,end=" ")
+#     a,b=b,a+b
+
+# fibnocaai from 3 to 50
+# n=50
+# a,b=0,1
+# while a<=50:
+#     if a>=3:
+#         print(a,end=" ")
+#     a,b=b,a+b
+
+# panagram
+# s="the quick brown fox jumps over the lazy dog"
+# s=s.lower()
+# for i in "abcdefghijklmnopqrstuvwxyz":
+#     if i not in s:
+#         print("not panagram")
+#         break
+# else:
+#     print("panagram")
+
+
+# even index
+# a="kiran"
+# print(a[::2])
+# l=len(a)
+# for i in range(0,l,2):
+#     print(a[i])
+
+# # replace # with 6
+# s="#1a2b3c4d5e6f7g8h9i0j"
+# print(s.replace("#","6"))
+
+# how many times a letter occurs in a string
+# s="kiran"
+# dic={}
+# for i in s:
+#     if i in dic:
+#         dic[i]+=1
+#     else:
+#         dic[i]=1
+# print(dic)
+
+# sqrt of number i don't want decimal value
+n=8
+print(round(n**0.5))
+
+# do not use pow(x, 0.5) in c++ or x ** 0.5 in python.
+
+# n=5
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         print(i*j,end=" ")
+#     print()
