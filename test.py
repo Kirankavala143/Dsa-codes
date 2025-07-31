@@ -133,8 +133,41 @@
 
 
 # sum of digits
+# n = int(input())
+# total = 0
+# for i in str(n):
+#     total += 1
+# print(total)
+
+
+
+# MATRICS
+
+def  transpose_matrix(matrix, m, n):
+    lists = []
+    for i in range(m):
+        row = []
+        for j in range(n):
+            row.append(matrix[j][i])
+        lists.append(row) 
+    return lists 
+
+
+def convert_str_to_int(list_a):
+    new_list = []
+    for i in list_a:
+        i = int(i)
+        new_list.append(i)
+    return new_list  
+
+m = int(input())
 n = int(input())
-total = 0
-for i in str(n):
-    total += 1
-print(total)
+new_list = []
+for i in range(n):
+    list_a = input().split()
+    list_b = convert_str_to_int(list_a)
+    new_list.append(list_b)
+
+result = transpose_matrix(new_list, m,n)
+for i in result:
+    print(i)
