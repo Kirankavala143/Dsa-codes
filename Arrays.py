@@ -154,6 +154,7 @@ arr1=[1,2,3,3,4,5]
 arr2=[3,4,5,6,7]
 print(find_intersection(arr1,arr2))
 
+
 # find the missing number in a array
 # def find_missing_number(arr):
 #     n = len(arr)
