@@ -292,3 +292,4 @@ for name in sorted(data):
     print(f"{name}: {data[name]}")
 
 #  print 1 letter of the words
+print(l[0])
