@@ -159,6 +159,8 @@ for r in range(n):
         break
     print(left)
 
+    
+
 
 
 
