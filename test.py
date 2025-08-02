@@ -143,33 +143,64 @@
 
 # MATRICS
 
-def  transpose_matrix(matrix, m, n):
-    lists = []
-    for i in range(m):
-        row = []
-        for j in range(n):
-            row.append(matrix[j][i])
-        lists.append(row) 
-    return lists 
+# def  transpose_matrix(matrix, m, n):
+#     lists = []
+#     for i in range(m):
+#         row = []
+#         for j in range(n):
+#             row.append(matrix[j][i])
+#         lists.append(row) 
+#     return lists 
 
 
-def convert_str_to_int(list_a):
-    new_list = []
-    for i in list_a:
-        i = int(i)
-        new_list.append(i)
-    return new_list  
+# def convert_str_to_int(list_a):
+#     new_list = []
+#     for i in list_a:
+#         i = int(i)
+#         new_list.append(i)
+#     return new_list  
 
 
 
-m = int(input())
-n = int(input())
-new_list = []
-for i in range(n):
-    list_a = input().split()
-    list_b = convert_str_to_int(list_a)
-    new_list.append(list_b)
+# m = int(input())
+# n = int(input())
+# new_list = []
+# for i in range(n):
+#     list_a = input().split()
+#     list_b = convert_str_to_int(list_a)
+#     new_list.append(list_b)
 
-result = transpose_matrix(new_list, m,n)
-for i in result:
-    print(i)
+# result = transpose_matrix(new_list, m,n)
+# for i in result:
+#     print(i)
+
+
+li=[5,9,1,8,7]
+n=len(li)
+ans=float('-inf')
+left=0
+temp=0
+for r in range(n):
+    temp+=li[r]
+
+    if (r-left ==3):
+        temp-=li[left]
+        left+=1
+
+    if (r-left+1 ==3):
+        ans=max(ans,temp)
+
+print(ans)
+
+s="xyzzaz"
+# n=len(s)
+# for i in range(n)
+
+print(2 ** 3 ** 2)
+
+def f(x, y=[]):
+    y.append(x)
+    return y
+
+print(f(1))
+print(f(2))

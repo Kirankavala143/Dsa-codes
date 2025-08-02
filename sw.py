@@ -50,18 +50,6 @@
 #         ans=max(ans,temp)
 # print(ans)
     
-s = [5, 9, 1, 8, 7]
-n = len(s)
-l = 0
-window_sum = 0
-
-for r in range(n):
-    window_sum += s[r]
-
-    if (r - l + 1 == 3):  # when window size is 3
-        print(window_sum)
-        window_sum -= s[l]  # remove leftmost
-        l += 1
 # 1876
 # s="xyzzaz"
 # n=len(s)
@@ -151,6 +139,11 @@ print(ans)
 #     if (r-left+1 ==k): # 
 #         ans=max(ans,temp)
 # print(ans/4)
+
+
+
+
+
 
 
 haystack = "sadbutsad"
