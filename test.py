@@ -196,11 +196,16 @@ s="xyzzaz"
 # n=len(s)
 # for i in range(n)
 
-print(2 ** 3 ** 2)
 
-def f(x, y=[]):
-    y.append(x)
-    return y
+# reverse a array
+l = [1, 2, 3, 4, 5]
+# l.reverse()  # In-place reversal
+print(l[::-1])
 
-print(f(1))
-print(f(2))
+# generate 2,4,6,8,10 
+# -2,-4,-6,-8,-10
+l = [2 * i for i in range(1, 6)]  # Generates [2, 4, 6, 8, 10]
+print(l)
+l = [-2 * i for i in range(1, 6)]  # Generates [-2, -4, -6, -8, -10]
+print(l)
+

@@ -91,15 +91,30 @@
 # print(ans)
 
 # 2144
-cost=[6,5,7,9,2,2]
-cost.sort()
-# n=len(cost)
-ans=0
-took=0
-for i in range(len(cost)-1,-1,-1):
-    if took == 2:
-        took = 0
-    else:
-        ans += cost[i-1]
-        took += 1
-print(ans)  
+# cost=[6,5,7,9,2,2]
+# cost.sort()
+# # n=len(cost)
+# ans=0
+# took=0
+# for i in range(len(cost)-1,-1,-1):
+#     if took == 2:
+#         took = 0
+#     else:
+#         ans += cost[i-1]
+#         took += 1
+# print(ans)  
+
+# 1343
+l=[2,2,2,2,5,5,5,8]
+n=len(l)
+for i in range(n):
+    for j in range(i,n):
+        temp=[]
+        tsum=0
+        for k in range(i,j+1):
+            temp.append(l[k])
+            tsum+=l[k]
+        if len(temp) == 3:
+            print(temp)
+
+
