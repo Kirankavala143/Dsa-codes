@@ -67,3 +67,39 @@
 #     if len(dic) ==3:
 #         ans+=1
 # print(ans)
+
+# l=[3,4,8,1,5]
+# l.sort()
+# n=len(l)
+# k=3
+# left=0
+# ans=float('inf')
+# for right in range(n):
+#     if right-left == 3:
+#         left+=1
+#     if right-left+1 == 3:
+#         ans=min(ans,l[right] - l[left])
+# print(ans)
+
+
+# 
+# l=[10,1000,1,100]
+# l.sort()
+# ans=0
+# for i in range(0,len(l),2):
+#     ans+=l[i]
+# print(ans)
+
+# 2144
+cost=[6,5,7,9,2,2]
+cost.sort()
+# n=len(cost)
+ans=0
+took=0
+for i in range(len(cost)-1,-1,-1):
+    if took == 2:
+        took = 0
+    else:
+        ans += cost[i-1]
+        took += 1
+print(ans)  
