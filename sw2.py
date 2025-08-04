@@ -1,32 +1,69 @@
-# highest subarray sum of length 3
+# # highest subarray sum of length 3
 # l=[5,9,1,8,7]
 # n=len(l)
 # ans=0
-# k=3
+
 # for i in range(n):
 #     for j in range(i,n):
 #         temp=[]
+#         tsum=0
 #         for k in range(i,j+1):
 #             temp.append(l[k])
-#         if len(temp) ==k:
-#             print(temp, sum(temp))
+#             tsum+=l[k]
+#         if len(temp) ==3:
+#             ans=max(ans,tsum)
+# print(ans)
+            # print(temp, sum(temp))
 #             ans=max(ans,sum(temp))
 # print(ans)  
             
 
-l=[5,9,1,8,7]
-n=len(l)
-left=0
-k=3
-temp=0
-ans=0
-for right in range(n):
-    temp+=l[right]
+# l=[5,9,1,8,7]
+# n=len(l)
+# left=0
+# k=3
+# temp=0
+# ans=0
+# for right in range(n):
+#     temp+=l[right]
 
-    if right-left ==k:  #index first
-        temp-=l[left]
-        left+=1
-    if right-left+1 == k:
-        ans=max(ans,temp)
-print(ans)  
+#     if right-left ==k:  #index first
+#         temp-=l[left]
+#         left+=1
+#     if right-left+1 == k:
+#         ans=max(ans,temp)
+# print(ans)  
 
+# s="xyzzaz"
+# n=len(s)
+# ans=0
+# for i in range(n):
+#     for j in range(i,n):
+#         temp=[]
+#         for k in range(i,j+1):
+#             temp.append(s[k])
+#             a=set(temp)
+#     if len(temp) and len(a) == 3:
+#         ans+=1
+# print(ans)
+
+# s="xyzzaz"
+# n=len(s)
+# left=0
+# temp=[]
+# ans=0
+# dic={}
+# for right in range(n):
+#     if s[right] in dic:
+#         dic[s[right]]+=1
+#     else:
+#         dic[s[right]]=1
+
+#     if right-left ==3:
+#         dic[s[left]]-=1
+#         if dic[s[left]] == 0:
+#             dic.pop(s[left])
+#         left+=1
+#     if len(dic) ==3:
+#         ans+=1
+# print(ans)
