@@ -105,16 +105,41 @@
 # print(ans)  
 
 # 1343
+# l=[2,2,2,2,5,5,5,8]
+# n=len(l)
+# t=4
+# k=3
+# ans=0
+# for i in range(n):
+#     for j in range(i,n):
+#         temp=[]
+#         tsum=0
+#         for m in range(i,j+1):
+#             temp.append(l[m])
+#             tsum+=l[m]
+#         if len(temp) == k:
+#             avg= tsum/k
+#             if avg >=t:
+#                 ans+=1
+# print(ans)            
+
+# OPTIMAL
 l=[2,2,2,2,5,5,5,8]
 n=len(l)
-for i in range(n):
-    for j in range(i,n):
-        temp=[]
-        tsum=0
-        for k in range(i,j+1):
-            temp.append(l[k])
-            tsum+=l[k]
-        if len(temp) == 3:
-            print(temp)
+t=4
+k=3
+ans=0
+temp=0
+left=0
+for right in range(n):
+    temp+=l[right]
+    if right-left ==k:
+        temp-=l[left]
+        left+=1
+    if right-left+1 == k:
+        print(left, right, temp)
+        if temp/k >= t:
+            ans+=1
+print(ans)
 
 
