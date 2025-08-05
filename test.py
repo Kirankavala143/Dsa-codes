@@ -221,11 +221,22 @@ print(l)
 # print(is_power_of_three)
 
 # another way 
-import math
-n=int(input("Enter a number: "))
-a=pow(3,3)
-print(a)
-if n==a:
-    print("true")
-else:
-    print("false")
+# import math
+# n=int(input("Enter a number: "))
+# a=pow(3,3)
+# print(a)
+# if n==a:
+#     print("true")
+# else:
+#     print("false")
+
+
+# n=int(input("Enter a number: "))
+# while n > 1:
+#     if n % 3 != 0:
+#         break
+#     n //= 3
+# if n == 1:
+#     print("true")
+# else:
+#     print("false")
