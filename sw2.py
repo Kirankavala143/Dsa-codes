@@ -124,22 +124,37 @@
 # print(ans)            
 
 # OPTIMAL
-l=[2,2,2,2,5,5,5,8]
+# l=[2,2,2,2,5,5,5,8]
+# n=len(l)
+# t=4
+# k=3
+# ans=0
+# temp=0
+# left=0
+# for right in range(n):
+#     temp+=l[right]
+#     if right-left ==k:
+#         temp-=l[left]
+#         left+=1
+#     if right-left+1 == k:
+#         print(left, right, temp)
+#         if temp/k >= t:
+#             ans+=1
+# print(ans)
+
+l=[9,3,4,8,1]
 n=len(l)
-t=4
 k=3
+left=0
 ans=0
 temp=0
-left=0
 for right in range(n):
     temp+=l[right]
-    if right-left ==k:
+
+    if right-left == k:
         temp-=l[left]
         left+=1
     if right-left+1 == k:
-        print(left, right, temp)
-        if temp/k >= t:
-            ans+=1
+        ans=max(ans,temp)
 print(ans)
-
-
+#   VARAIABLE SIZE SLIDING WINDOW

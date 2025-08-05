@@ -209,3 +209,23 @@ print(l)
 l = [-2 * i for i in range(1, 6)]  # Generates [-2, -4, -6, -8, -10]
 print(l)
 
+# determine whether n is power of 3 or not
+# n = int(input("Enter a number: "))
+# is_power_of_three = False
+# while n > 1:
+#     if n % 3 != 0:
+#         break
+#     n //= 3
+# if n == 1:
+#     is_power_of_three = True
+# print(is_power_of_three)
+
+# another way 
+import math
+n=int(input("Enter a number: "))
+a=pow(3,3)
+print(a)
+if n==a:
+    print("true")
+else:
+    print("false")
