@@ -160,8 +160,6 @@
 #         new_list.append(i)
 #     return new_list  
 
-
-
 # m = int(input())
 # n = int(input())
 # new_list = []
@@ -173,7 +171,6 @@
 # result = transpose_matrix(new_list, m,n)
 # for i in result:
 #     print(i)
-
 
 li=[5,9,1,8,7]
 n=len(li)
@@ -241,3 +238,5 @@ print(l)
 # else:
 #     print("false")
 
+# print("Enter a number:")
+# n = int(input())  
