@@ -158,3 +158,27 @@ for right in range(n):
         ans=max(ans,temp)
 print(ans)
 #   VARAIABLE SIZE SLIDING WINDOW
+
+# l=[9,3,4,8,1]
+# n=len(l)
+# k=10
+# left=0
+# ans=0
+# temp=0
+# for right in range(n):
+#     temp+=l[right]
+
+#     while temp > k:
+#         temp-=l[left]
+#         left+=1
+#     print(l[left:right+1],sum(l[left:right+1]))
+#     ans=max(ans,right-left+1)
+# print(ans)
+
+# find length os subarray with atmost k ones
+l=[0,1,3,1,1,6,7,1,0,1]
+n=len(l)
+left=0
+temp=0
+ans=0
+k=2
