@@ -175,10 +175,21 @@ print(ans)
 #     ans=max(ans,right-left+1)
 # print(ans)
 
-# find length os subarray with atmost k ones
-l=[0,1,3,1,1,6,7,1,0,1]
-n=len(l)
-left=0
-temp=0
-ans=0
-k=2
+# find max length os subarray with atmost k ones
+# l=[0,1,3,1,1,6,7,1,0,1]
+# n=len(l)
+# left=0
+# temp=0
+# ans=0
+# k=2
+# for right in range(n):
+#     if l[right] == 1:
+#         temp+=1
+
+#     while temp>k:
+#         if l[left] == 1:
+#             temp-=1
+#         left+=1
+#     print(l[left:right+1], sum(l[left:right+1]))
+#     ans=max(ans,right-left+1)
+# print(ans)
