@@ -194,3 +194,20 @@ print(ans)
 #     ans=max(ans,right-left+1)
 # print(ans)
 
+l=[1,1,1,0,0,0,1,1,1,1,0]
+n=len(l)
+left=0
+temp=0
+ans=0
+k=2
+for right in range(n):
+    if l[right] == 0:
+        temp+=1
+
+    while temp>k:
+        if l[left] == 0:
+            temp-=1
+        left+=1
+    print(l[left:right+1], sum(l[left:right+1]))
+    ans=max(ans,right-left+1)
+print(ans)
