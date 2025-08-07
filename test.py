@@ -245,3 +245,16 @@ print(l)
 #     print("true")
 # else:
 #     print("false")
+
+def find_intersection(arr1, arr2):
+    intersection = []
+    set_arr2 = set(arr2)  # Convert arr2 to a set for O(1) lookups
+    for num in arr1:
+        if num in set_arr2:
+            intersection.append(num)
+    return intersection 
+
+arr1 = [1, 2, 3, 4, 5]
+arr2 = [3, 4, 5, 6, 7]
+result = find_intersection(arr1, arr2)
+print(result)
