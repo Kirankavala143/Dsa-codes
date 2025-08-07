@@ -142,21 +142,21 @@
 #             ans+=1
 # print(ans)
 
-l=[9,3,4,8,1]
-n=len(l)
-k=3
-left=0
-ans=0
-temp=0
-for right in range(n):
-    temp+=l[right]
+# l=[9,3,4,8,1]
+# n=len(l)
+# k=3
+# left=0
+# ans=0
+# temp=0
+# for right in range(n):
+#     temp+=l[right]
 
-    if right-left == k:
-        temp-=l[left]
-        left+=1
-    if right-left+1 == k:
-        ans=max(ans,temp)
-print(ans)
+#     if right-left == k:
+#         temp-=l[left]
+#         left+=1
+#     if right-left+1 == k:
+#         ans=max(ans,temp)
+# print(ans)
 #   VARAIABLE SIZE SLIDING WINDOW
 
 # l=[9,3,4,8,1]
@@ -194,20 +194,44 @@ print(ans)
 #     ans=max(ans,right-left+1)
 # print(ans)
 
-l=[1,1,1,0,0,0,1,1,1,1,0]
-n=len(l)
-left=0
-temp=0
-ans=0
-k=2
-for right in range(n):
-    if l[right] == 0:
-        temp+=1
+# # 1004
+# l=[1,1,1,0,0,0,1,1,1,1,0]
+# n=len(l)
+# left=0
+# temp=0
+# ans=0
+# k=2
+# for right in range(n):
+#     if l[right] == 0:
+#         temp+=1
 
-    while temp>k:
-        if l[left] == 0:
-            temp-=1
-        left+=1
-    print(l[left:right+1], sum(l[left:right+1]))
-    ans=max(ans,right-left+1)
-print(ans)
+#     while temp>k:
+#         if l[left] == 0:
+#             temp-=1
+#         left+=1
+#     # print(l[left:right+1], sum(l[left:right+1]))
+#     ans=max(ans,right-left+1)
+# print(ans)
+
+# optimize 
+# l=[1,1,1,0,0,0,1,1,1,1,0]
+# n=len(l)
+# left=0
+# temp=0
+# ans=0
+# count1=0
+# count0=0
+# k=2
+# for right in range(n):
+#     if l[right] ==0:
+#         count0+=1
+#     else:
+#         count1+=1
+#     while min(count0,count1) >k:
+#         if l[left] ==0:
+#             count0-=1
+#         else:
+#             count1-=1
+#         left+=1
+#     ans=max(ans,right-left+1)
+# print(ans)
