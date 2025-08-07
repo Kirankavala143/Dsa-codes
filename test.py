@@ -240,3 +240,8 @@ print(l)
 
 # print("Enter a number:")
 # n = int(input())  
+
+# if n % 3 == 0:
+#     print("true")
+# else:
+#     print("false")
