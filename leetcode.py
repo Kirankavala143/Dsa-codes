@@ -66,6 +66,7 @@
 #                     return False
 #             return True
 
+
 #         sum_A = 0  # Prime indices
 #         sum_B = 0  # Non-prime indices
 
