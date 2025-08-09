@@ -217,7 +217,7 @@
 # l=[1,1,1,0,0,0,1,1,1,1,0]
 # n=len(l)
 # left=0
-# temp=0
+
 # ans=0
 # count1=0
 # count0=0
@@ -235,3 +235,42 @@
 #         left+=1
 #     ans=max(ans,right-left+1)
 # print(ans)
+# print(l)
+
+
+# 2024
+# l="TTFF"
+# n=len(l)
+# left=0
+# temp=0
+# ans=0
+# k=2
+# countT=0
+# countF=0
+# for right in range(n):
+#     if l[right] =='T':
+#         countT+=1
+#     else:
+#         countF+=1
+#     while min(countT,countF) > k:
+#         if l[left] == 'T':
+#             countT-=1
+#         else:
+#             countF-=1
+#         left+=1
+#     ans=max(ans,right-left+1)
+# print(ans)
+
+# 3
+s="abcabcbb"
+n=len(s)
+left=0
+temp=set()
+ans=0
+for right in range(n):
+    while s[right] in temp:
+        temp.remove(s[left])
+        left+=1
+    temp.add(s[right])
+    ans=max(ans,right-left+1)
+print(ans)      
