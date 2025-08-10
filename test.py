@@ -253,9 +253,10 @@ def find_intersection(arr1, arr2):
         if num in set_arr2:
             intersection.append(num)
     return intersection 
-
 arr1 = [1, 2, 3, 4, 5]
 arr2 = [3, 4, 5, 6, 7]
 result = find_intersection(arr1, arr2)
 print(result)
+
+
 
