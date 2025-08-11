@@ -273,4 +273,5 @@ for right in range(n):
         left+=1
     temp.add(s[right])
     ans=max(ans,right-left+1)
-print(ans)      
+print(ans)   
+
