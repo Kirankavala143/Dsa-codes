@@ -262,6 +262,24 @@
 # print(ans)
 
 # 3
+# s="abcbaa"
+# n=len(s)
+# a=set()
+# l=0
+# ans=0
+# count=0
+# for i in range(n):
+#     ch=s[i]
+#     if ch not in a:
+#         a.add(ch)
+#     else:
+#         while ch in a:
+#             a.remove(s[l])
+#             l+=1
+#         a.add(ch)
+    
+#     ans=max(ans,i-l+1)
+# print(ans)
 s="abcabcbb"
 n=len(s)
 left=0
@@ -275,3 +293,25 @@ for right in range(n):
     ans=max(ans,right-left+1)
 print(ans)   
 
+# 904
+l=[1,2,3,2,2]
+n=len(l)
+ans=0
+k=2
+left=0
+dic={}
+for right in range(n):
+    val=l[right]
+    if val in dic:
+        dic[val]+=1
+    else:
+        dic[val]=1
+    while len(dic) > k:
+        ss=l[left]
+        dic[ss]-=1
+        if dic[ss] ==0:
+            dic.pop(ss)
+        left+=1
+    ans=max(ans,right-left+1)
+print(ans)
+            
