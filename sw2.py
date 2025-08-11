@@ -294,25 +294,53 @@ for right in range(n):
 print(ans)   
 
 # 904
-l=[1,2,3,2,2]
-n=len(l)
-ans=0
-k=2
-left=0
-dic={}
-for right in range(n):
-    val=l[right]
-    if val in dic:
-        dic[val]+=1
-    else:
-        dic[val]=1
-    while len(dic) > k:
-        ss=l[left]
-        dic[ss]-=1
-        if dic[ss] ==0:
-            dic.pop(ss)
-        left+=1
-    ans=max(ans,right-left+1)
-print(ans)
+# l=[1,2,3,2,2]
+# n=len(l)
+# ans=0
+# k=2
+# left=0
+# dic={}
+# for right in range(n):
+#     val=l[right]
+#     if val in dic:
+#         dic[val]+=1
+#     else:
+#         dic[val]=1
+#     while len(dic) > k:
+#         ss=l[left]
+#         dic[ss]-=1
+#         if dic[ss] ==0:
+#             dic.pop(ss)
+#         left+=1
+#     ans=max(ans,right-left+1)
+# print(ans)
 
 
+# 438
+def findAnagrams(s, p):
+    n = len(s)
+    m = len(p)
+    ans = []
+    dic = {}
+    for i in p:
+        if i in dic:
+            dic[i] += 1
+        else:
+            dic[i] = 1  
+    left = 0
+    for right in range(n):
+        if s[right] in dic:
+            dic[s[right]] -= 1
+        else:
+            dic[s[right]] = -1
+        
+        while dic[s[right]] < 0:
+            dic[s[left]] += 1
+            left += 1
+        
+        if right - left + 1 == m:
+            ans.append(left)
+    return ans  
+s = "cbaebabacd"
+p = "abc"
+print(findAnagrams(s, p))
