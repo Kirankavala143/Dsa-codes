@@ -360,3 +360,23 @@ print(findAnagrams(s, p))
 #         left+=1
 # print(ans)
 
+# 1248 return length of longest subarray with atmost k odd numbers
+l=[1,3,4,5,7]
+n=len(l)
+ans=0 
+left=0
+temp=0
+k=2
+for right in range(n):
+    if l[right] %2 ==1:
+        temp+=1
+    while temp > k:
+        if l[left] %2 ==1:
+            temp-=1
+        left+=1
+    # ans=max(ans,right-left+1)
+    # print(l[left:right+1],right)
+    ans+=right-left+1
+print(ans)        
+
+
