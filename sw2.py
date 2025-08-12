@@ -344,3 +344,19 @@ def findAnagrams(s, p):
 s = "cbaebabacd"
 p = "abc"
 print(findAnagrams(s, p))
+
+# 209 minimum size of subarray sum
+# l=[2,3,1,2,4,3]
+# n=len(l)
+# ans=float('inf')
+# left=0
+# temp=0    
+# k=7
+# for right in range(n):
+#     temp+=l[right]
+#     while temp>=k:
+#         ans=min(ans,right-left+1)
+#         temp-=l[left]
+#         left+=1
+# print(ans)
+
