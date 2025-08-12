@@ -361,22 +361,72 @@ print(findAnagrams(s, p))
 # print(ans)
 
 # 1248 return length of longest subarray with atmost k odd numbers
-l=[1,3,4,5,7]
-n=len(l)
-ans=0 
-left=0
-temp=0
+def atMost(arr,k):
+    n=len(l)
+    ans=0 
+    left=0
+    temp=0
+    for right in range(n):
+        if l[right] %2 ==1:
+            temp+=1
+        while temp > k:
+            if l[left] %2 ==1:
+                temp-=1
+            left+=1
+        # ans=max(ans,right-left+1)
+        # print(l[left:right+1],right)
+        ans+=right-left+1
+    return ans
+
+l=[6,1,2,1]
 k=2
-for right in range(n):
-    if l[right] %2 ==1:
-        temp+=1
-    while temp > k:
-        if l[left] %2 ==1:
-            temp-=1
-        left+=1
-    # ans=max(ans,right-left+1)
-    # print(l[left:right+1],right)
-    ans+=right-left+1
-print(ans)        
+a=atMost(l,k) - atMost(l,k-1)
+print(a)
 
 
+# 930
+def atMost(l,k):
+    if k<0:
+        return 0
+    l=[1,0,1,0,1]
+    n=len(l)
+    temp=0
+    k=2
+    left=0
+    for right in range(n):
+        if l[right] ==1:
+            temp+=1
+        while temp>k:
+            if l[left] == 1:
+                temp-=1
+            left+=1
+        ans+=right-left+1
+    return ans
+# return atMost(nums,goal) - atmost(nums,goal)
+            
+
+# 992
+#     def atMost(l,k):
+#        l=[1,2,1,2,3]
+#         n=len(l)
+#         left=0
+#         temp=0
+#         dic={}
+#         ans=0
+#         for right in range(n):
+#             val=l[right]
+#             if val in dic:
+#                 dic[val]+=1
+#             else:
+#                 dic[val] = 1
+#             while (len(dic)>k):
+#                 ival=l[left]
+#                 dic[ival]-=1
+#                 if dic[ival] == 0:
+#                     dici.pop(ival)
+#                 left+=1
+                
+#             ans+=right+left-1
+#     return ans
+# ans=atMost(l,k)-atMost(l,k-1)
+# return ans
