@@ -76,11 +76,28 @@
 # print(ans)
 
 
+# def atmost(arr, k):
+#     n=len(fruits)
+#     left=0
+#     temp=0
+#     ans=0
+#     for right in range(n):
+#         if fruits[right] ==1:
+#             temp+=1
+#         while temp>k:
+#             if fruits[left] ==1:
+#                 temp-=1
+#             left+=1
+#         ans=max(ans,right-left+1)
+#     return atmost(fruits, k) - atmost(fruits, k-1)
 # fruits = [1, 2, 1, 2, 3]
 # k=2
-# n=len(fruits)
-# left=0
-# temp=0
-# ans=0
-# for right in range(n):
-#     while 
+# atmost(fruits, k)
+
+arr = [5, 2, -1, 0, 3] 
+k = 3
+temp=0
+n=len()
+left=0
+for right in range(n):
+    temp+=arr[right]
