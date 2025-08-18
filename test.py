@@ -258,4 +258,11 @@ arr2 = [3, 4, 5, 6, 7]
 result = find_intersection(arr1, arr2)
 print(result)
 
-# find arthemtic p
+# find arthemtic progression for the numbers
+a=input("Enter the first number: ")
+b=input("Enter the second number: ")
+c=input("Enter the third number: ")
+if (b - a) == (c - b):
+    print("The numbers form an arithmetic progression.")
+else:
+    print("The numbers do not form an arithmetic progression.")
