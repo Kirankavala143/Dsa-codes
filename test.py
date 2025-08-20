@@ -259,10 +259,27 @@ result = find_intersection(arr1, arr2)
 print(result)
 
 # find arthemtic progression for the numbers
-a=input("Enter the first number: ")
-b=input("Enter the second number: ")
-c=input("Enter the third number: ")
-if (b - a) == (c - b):
-    print("The numbers form an arithmetic progression.")
-else:
-    print("The numbers do not form an arithmetic progression.")
+# a=input("Enter the first number: ")
+# b=input("Enter the second number: ")
+# c=input("Enter the third number: ")
+# if (b - a) == (c - b):
+#     print("The numbers form an arithmetic progression.")
+# else:
+#     print("The numbers do not form an arithmetic progression.")
+
+# a=[5,2,1,8,6,9]
+# b=sorted(set(a))
+# print(b[1],b[-2])
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# s=input().strip()
+# upper_count=sum(1 for ch in s if ch.isupper())
+# lower_count=sum(1 for ch in s if ch.islower())
+# if upper_count>lower_count:
+#     print(s.upper())
+# else:
+#     print(s.lower())
+
+a=" kiran is my name. "
+b=a.split()
+print(b)
