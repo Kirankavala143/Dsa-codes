@@ -284,5 +284,10 @@ a=" kiran is my name. "
 b=a.split()
 print(b)
 
+# Remove leading and trailing spaces from each word in the list
+cleaned_list = [word.strip() for word in b]
+print(cleaned_list)
+
+
 
 
