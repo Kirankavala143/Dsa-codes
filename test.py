@@ -288,6 +288,7 @@ print(b)
 cleaned_list = [word.strip() for word in b]
 print(cleaned_list)
 
+cities=["hero","zero","villian"]
 
 
 
