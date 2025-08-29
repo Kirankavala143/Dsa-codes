@@ -288,13 +288,16 @@ print(b)
 cleaned_list = [word.strip() for word in b]
 print(cleaned_list)
 
-cities=["hero","zero","villian"]
-tours=["mumbai","pune","banglore"]
+# cities=["hero","zero","villian"]
+# tours=["mumbai","pune","banglore"]
 
-def print_length(list):
-    print(len(list))
+# def print_length(list):
+#     print(len(list))
 
-print_length(cities)
+# print_length(cities)
 
 
+a="kiran"
+for i in a:
+    print(i,sep="/")
 
