@@ -297,6 +297,7 @@ print(cleaned_list)
 # print_length(cities)
 
 
+
 a="kiran"
 for i in a:
     print(i,sep="/")
