@@ -302,3 +302,5 @@ a="kiran"
 for i in a:
     print(i,sep="/")
 
+
+
