@@ -51,3 +51,9 @@ s1.average()
 # print(s1.average())
 
 
+
+
+
+
+
+
