@@ -49,3 +49,5 @@ class Student:
 s1=Student("kiran",[45,46,48])
 s1.average()
 # print(s1.average())
+
+
