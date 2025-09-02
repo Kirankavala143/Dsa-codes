@@ -34,6 +34,47 @@
 # sum=fact(5)
 # print(sum)
 
-f=open("ss.txt","w")
-data=f.read()
-print(data)
+# f=open("ss.txt","w")
+# data=f.read()
+# print(data)
+
+# print("hiss")
+# cot=0
+# while cot<3:
+#     cot+=1
+#     print("hi")
+# else:
+#     print("hello")
+
+#code here
+# def fun(*args):
+#     return sum(args)
+# print(fun(1,2,3,4,5,6))
+
+# def fun(**kwargs):
+#     return kwargs
+
+# print(fun(a=1,b=2,c=3,d=4))
+
+n=lambda x:"positive" if x>0 else "negative" if x<0 else "zero"
+print(n(0))
+print(n(-5))
+print(n(5))
+
+# li=[lambda  x,n=n :x*n for n in range(1,6)]
+# for i in li:
+#     print(i(1))
+
+a=lambda x,y:(x+y,x*y)
+print(a(2,3))
+
+li=filter(lambda x:x%2==0,[1,2,3,4,5,6,7,8,9])
+print(list(li))
+
+a=[1,2,3,4,5,6,7,8,9]
+
+def fun(x):
+    return x*2
+
+res=list(map(fun,a))
+print(res)
