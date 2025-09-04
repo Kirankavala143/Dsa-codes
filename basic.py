@@ -78,3 +78,28 @@ def fun(x):
 
 res=list(map(fun,a))
 print(res)
+
+l=[2,67,3,3,2,3,5,7,9,9,6,9]
+b=list(dict.fromkeys(l))
+print(b)
+
+n=int(input("enter a number:"))
+a,b=0,1
+for i in range(0,n+1):
+    print(a)
+    a,b=b,a+b
+
+num=int(input("enter a number:"))
+orginal_num=num
+length=len(str(num))
+sum_of_powers=0
+while (num>0): #15
+    digit=num%10 # %= remainder=3,5
+    sum_of_powers+=digit**length 
+    num=num//10
+if sum_of_powers==orginal_num:  
+    print("armstrong number")       
+else:       
+    print("not an armstrong number")
+
+    
