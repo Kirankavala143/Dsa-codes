@@ -288,3 +288,6 @@ print("Maximum Subarray Sum:", kadane(arr))
 # arr = [2, 1, 5, 2, 3, 2]
 # k = 5
 # print(longest_subarray(arr, k))
+
+
+
