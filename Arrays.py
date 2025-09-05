@@ -109,7 +109,6 @@ for x in n:
 # Then add zeros
 zero_count = n.count(0)
 lis.extend([0] * zero_count)
-
 print(lis)
 
 # optimal solutionc
