@@ -88,22 +88,48 @@
 # a = non_zero_elements + zero_elements
 # print(a)
 
-a=[2,5,67,0,3,0,5,0,4,0]
-l=[]
-for i in range(len(a)):
-    if a[i]==0:
-        l.append(a[i])
-    if a[i]!=0:
-        l.insert(0,a[i])
-print(l)
+# a=[2,5,67,0,3,0,5,0,4,0]
+# l=[]
+# for i in range(len(a)):
+#     if a[i]==0:
+#         l.append(a[i])
+#     if a[i]!=0:
+#         l.insert(0,a[i])
+# print(l)
 
 
+# union of two arrays
+# def union_of_arrays(arr1, arr2):
+#     return list(set(arr1) | set(arr2))
+
+# intersection of two arrays
+# def intersection_of_arrays(arr1, arr2):
+#     return list(set(arr1) & set(arr2))
+# # example usage
+# arr1 = [1, 2, 3, 4, 5]
+# arr2 = [4, 5, 6, 7, 8]
+# print("Union:", union_of_arrays(arr1, arr2))
+# print("Intersection:", intersection_of_arrays(arr1, arr2))
 
 
+# find the missing number in an array
+# def find_missing(arr):
+#     for i in range(1, len(arr) + 1):
+#         if i not in arr:
+#             return i
 
+# # arr = [1, 2, 3,4,6,9,7,8,10]
+# arr=[0,2]
+# print(find_missing(arr))
 
+# def find_missing_number(arr):
+#     n=len(arr)+1
+#     total_sum=(n*(n+1))//2
+#     actual_sum=sum(arr)
+#     return total_sum-actual_sum
 
-
+# arr=[1,2,3,5]
+# print(find_missing_number(arr))
 
 
 
