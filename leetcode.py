@@ -5,6 +5,7 @@
 #                 if nums[i]+nums[j]== target:
 #                     return [i,j]
 
+
 # 283class Solution:
     # def moveZeroes(self, nums: List[int]) -> None:
     #     pos=0
