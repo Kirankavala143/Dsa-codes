@@ -102,4 +102,7 @@ if sum_of_powers==orginal_num:
 else:       
     print("not an armstrong number")
 
+
+
+
     
