@@ -131,6 +131,23 @@
 # arr=[1,2,3,5]
 # print(find_missing_number(arr))
 
+# kth smallest and kth largest element in an array
+# k=3
+# n=4
+# a=[1,2,5,4]
+# a.sort()
+# print(a)
+# print(a[k-1],a[n-k])
+
+k=3
+a=[1,2,5,4]
+a.sort()
+n = len(a)   # auto calculate length
+print(a)
+print(a[k-1], a[n-k])
+
+
+
 
 
 

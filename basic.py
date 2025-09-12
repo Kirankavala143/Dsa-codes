@@ -102,10 +102,16 @@ if sum_of_powers==orginal_num:
 else:       
     print("not an armstrong number")
 
+stack = []
+stack.append(1)  # push
+stack.append(2)
+print(stack.pop())  # pop, outputs 2
+print(stack[-1])    # peek, outputs 1
 
 
 
-    
+
+
 
 
 
