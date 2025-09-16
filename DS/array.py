@@ -139,13 +139,19 @@
 # print(a)
 # print(a[k-1],a[n-k])
 
-k=3
-a=[1,2,5,4]
-a.sort()
-n = len(a)   # auto calculate length
-print(a)
-print(a[k-1], a[n-k])
+# k=3
+# a=[1,2,5,4]
+# a.sort()
+# n = len(a)   # auto calculate length
+# print(a)
+# print(a[k-1], a[n-k])
 
+a=[1,2,5,4]
+k=3
+n=len(a)
+a.sort()
+print(a)
+print(a[k-1],a[n-k])
 
 
 
