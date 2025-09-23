@@ -1,0 +1,141 @@
+1. Sliding Window
+
+When to use: Problems involving subarrays or substrings, often with constraints like “sum”, “length”, or “unique elements”.
+
+Idea: Maintain a window (start → end) and slide it across the array/string while keeping track of what you need.
+
+Example problems:
+
+Longest substring without repeating characters
+
+Maximum sum subarray of size k
+
+Minimum window substring
+
+Tip: Think in terms of expand (increase window) and shrink (reduce window).
+
+2. Two Pointers
+
+When to use: Arrays/strings where you need to find pairs or triplets that satisfy a condition.
+
+Idea: Use two indices (often one at start, one at end) and move them toward each other based on conditions.
+
+Example problems:
+
+Two sum (sorted array)
+
+Trapping rain water
+
+Container with most water
+
+3. Hashing / Hash Map
+
+When to use: Problems involving frequencies, duplicates, lookups, or fast existence checks.
+
+Idea: Store information in a hash map to access in O(1).
+
+Example problems:
+
+First non-repeating character
+
+Two sum (unsorted array)
+
+Subarray sum equals k
+
+4. Prefix Sum / Cumulative Sum
+
+When to use: Problems where you need sum of subarrays/substrings efficiently.
+
+Idea: Compute a running sum array, then use it to calculate sums of ranges in O(1).
+
+Example problems:
+
+Subarray sum queries
+
+Continuous subarray sum
+
+Maximum subarray sum
+
+5. Binary Search / Search Space Reduction
+
+When to use: Sorted arrays or monotonic conditions.
+
+Idea: Reduce the search space by half each time instead of scanning everything.
+
+Example problems:
+
+Find element in sorted array
+
+Search insert position
+
+Find smallest/largest satisfying a condition
+
+6. Stack / Monotonic Stack
+
+When to use: Problems with next greater/smaller element, balanced parentheses, or spans.
+
+Idea: Use stack to store candidates and pop when a condition is met.
+
+Example problems:
+
+Largest rectangle in histogram
+
+Next greater element
+
+Min stack problems
+
+7. Dynamic Programming (DP)
+
+When to use: Problems with overlapping subproblems or optimal substructure.
+
+Idea: Store results of subproblems to avoid recomputation.
+
+Example problems:
+
+Fibonacci
+
+Longest increasing subsequence
+
+Knapsack problems
+
+8. Backtracking / Recursion
+
+When to use: Problems involving all possible combinations or paths.
+
+Idea: Explore all possibilities, and backtrack when a path is invalid.
+
+Example problems:
+
+N-Queens
+
+Subsets / Permutations
+
+Word search
+
+9. Greedy
+
+When to use: Problems where local choice leads to global optimum.
+
+Idea: Make the “best” choice at each step.
+
+Example problems:
+
+Interval scheduling
+
+Minimum coins for change
+
+Fractional knapsack
+
+10. Bit Manipulation
+
+When to use: Problems involving numbers, subsets, XOR operations.
+
+Idea: Use bitwise operators to solve efficiently.
+
+Example problems:
+
+Single number
+
+Count bits
+
+Subsets generation using bits
