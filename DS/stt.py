@@ -24,3 +24,7 @@ def has_cycle(head):
     return False
 
 print(has_cycle())
+
+
+
+
