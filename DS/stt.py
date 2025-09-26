@@ -1,82 +1,16 @@
-def two_sum_sorted(arr, target):
-    left, right = 0, len(arr) - 1
-    while left < right:
-        curr_sum = arr[left] + arr[right]
-        if curr_sum == target:
-            return (left, right)
-        elif curr_sum < target:
-            left += 1  # need bigger sum
-        else:
-            right -= 1  # need smaller sum
-    return None
-arr=[1,3,6,7,9,12,15,25]
-target=18
-print(two_sum_sorted(arr, target))
-
-
-# def has_cycle(head):
-#     slow, fast = head, head
-#     while fast and fast.next:
-#         slow = slow.next
-#         fast = fast.next.next
-#         if slow == fast:
-#             return True
-#     return False
-
-# print(has_cycle())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# def two_sum_sorted(nums, target):
+#     left, right = 0, len(nums) - 1
+#     while left < right:
+#         s = nums[left] + nums[right]
+#         if s == target:
+#             return [left, right]
+#         if s < target:
+#             left += 1
+#         else:
+#             right -= 1
+#     return None
+# nums = [2, 7, 11, 15]
+# target = 9
+# print(two_sum_sorted(nums, target))
 
 
