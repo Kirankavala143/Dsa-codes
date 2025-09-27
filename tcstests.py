@@ -8,20 +8,21 @@
 #         x.append(f"{i}={j}")
 # print("{"+", ".join(x)+"}")
         
-n=int(input())
-height=list(map(int,input().split()))
-left,right=0,n-1
-max_area=0
-while left<right:
-    width=right-left
-    ht=min(height[left],height[right])
-    area=width*ht
-    max_area=max(max_area,area)
+# container with most water
+# n=int(input())
+# height=list(map(int,input().split()))
+# left,right=0,n-1
+# max_area=0
+# while left<right:
+#     width=right-left
+#     ht=min(height[left],height[right])
+#     area=width*ht
+#     max_area=max(max_area,area)
 
-    if height[left]<height[right]:
-        left+=1
-    else:
-        right-=1
-print(max_area)
-1,8,6,2,5,4,8,3,7
+#     if height[left]<height[right]:
+#         left+=1
+#     else:
+#         right-=1
+# print(max_area)
+# 1,8,6,2,5,4,8,3,7
 
