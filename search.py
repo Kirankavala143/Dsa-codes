@@ -64,39 +64,6 @@ print(arr)
 #     arr[j+1]=key
 # print(arr)
 
-# merge sort(merging elements)
-# def merge_sort(arr):
-#     if len(arr) > 1:
-#         mid = len(arr) // 2         # Step 1: Find the middle
-#         left = arr[:mid]            # Step 2: Divide into left half
-#         right = arr[mid:]           # Step 3: Divide into right half
-
-#         merge_sort(left)            # Step 4: Sort the left half
-#         merge_sort(right)           # Step 5: Sort the right half
-
-#         i = j = k = 0
-
-#         # Step 6: Merge the two sorted halves
-#         while i < len(left) and j < len(right):
-#             if left[i] < right[j]:
-#                 arr[k] = left[i]
-#                 i += 1
-#             else:
-#                 arr[k] = right[j]
-#                 j += 1
-#             k += 1
-
-#         # Step 7: Check for remaining elements
-#         while i < len(left):
-#             arr[k] = left[i]
-#             i += 1
-#             k += 1
-
-#         while j < len(right):
-#             arr[k] = right[j]
-#             j += 1
-#             k += 1
-
 # # Example usage
 # arr = [38, 27, 43, 3, 9, 82, 10]
 # merge_sort(arr)

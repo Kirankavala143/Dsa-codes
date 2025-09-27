@@ -5,10 +5,6 @@ def sayhi():
     print("bye")
 
 sayhi()
-
-
-
- 
 #  print 1 to n using recursion
 
 # def print1ton(n):

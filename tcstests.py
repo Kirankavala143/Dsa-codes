@@ -26,3 +26,10 @@
 # print(max_area)
 # 1,8,6,2,5,4,8,3,7
 
+
+m = input()   # taking input for the start day (e.g., "mon", "tue", etc.)
+n = int(input())  # taking input for number of days in the month
+
+w = ["mon","tue","wed","thu","fri","sat","sun"]  # list of weekdays
+x = w.index(m) + 1   # find the position of the starting day in the list and add 1
+print((n + x) // 7)  # calculate and print result
