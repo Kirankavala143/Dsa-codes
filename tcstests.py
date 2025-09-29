@@ -59,3 +59,7 @@ n=int(input())
 print(count_hops(n))  # 7
 
 
+
+
+
+
