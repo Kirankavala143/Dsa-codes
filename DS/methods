@@ -1,0 +1,82 @@
+📌 Next Topics After Stacks
+1. Queues
+
+Concept: FIFO (First In, First Out)
+
+Types:
+
+Simple Queue
+
+Circular Queue
+
+Deque (Double Ended Queue)
+
+Priority Queue (Heap-based)
+
+Implementation:
+
+Using Arrays
+
+Using Linked List
+
+Using Python collections.deque
+
+Problems:
+
+Implement Queue using Stacks
+
+Sliding Window Maximum (🔥)
+
+Rotten Oranges (BFS style)
+
+2. Recursion
+
+You’ll need recursion everywhere later (trees, backtracking, DP).
+
+Learn:
+
+Factorial, Fibonacci
+
+Sum of array, reverse string
+
+Tower of Hanoi
+
+Backtracking basics
+
+3. Trees
+
+Binary Tree Basics (preorder, inorder, postorder)
+
+Binary Search Tree (BST)
+
+Level-order Traversal (Queue + Tree combo)
+
+Common problems (height of tree, symmetric tree, diameter, LCA, etc.)
+
+4. Hashing
+
+Hash Maps / Hash Sets (Python dict & set)
+
+Problems:
+
+Two Sum
+
+Subarray sum = K
+
+First Non-repeating Character
+
+📌 Suggested Path (So you don’t get lost)
+
+Linked List ✅
+
+Stacks ✅
+
+Queues (next for you)
+
+Recursion
+
+Trees (BT + BST)
+
+Hashing
+
+Then → Graphs, Heaps, Tries, Dynamic Programming (later advanced).
