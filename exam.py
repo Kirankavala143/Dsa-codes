@@ -77,5 +77,9 @@ print(c)
 
 
 print(d)
+print("exam.py executed")
+
+print("hello")
+
 
 
