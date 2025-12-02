@@ -111,6 +111,8 @@ for i in l:
 print(ans)
 
 
+
+
 #         else:
 #             profit = price - min_price  # Sell today
 #             max_profit = max(max_profit, profit)  # Keep max profit

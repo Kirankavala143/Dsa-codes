@@ -101,3 +101,10 @@ n=len()
 left=0
 for right in range(n):
     temp+=arr[right]
+
+
+
+
+
+
+    

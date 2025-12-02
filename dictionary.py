@@ -36,3 +36,9 @@ print(d)
 
 # print(marks)
 #    SETS(set=mutable,set_elements=immutable)
+
+print("SETS")
+s={1,2,3,4,5}
+
+
+print(type(s))

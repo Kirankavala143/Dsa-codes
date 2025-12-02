@@ -68,3 +68,14 @@ n=int(input())
 l=list(map(int,input().split()))
 
 
+print(sorted_d)
+a=[1,2,3]
+b=[4,5,6]
+c=a+b
+print(c)
+
+
+
+print(d)
+
+
