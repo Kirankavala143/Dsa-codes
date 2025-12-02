@@ -74,12 +74,5 @@ b=[4,5,6]
 c=a+b
 print(c)
 
-
-
-print(d)
 print("exam.py executed")
-
-print("hello")
-
-
-
+print(l)
