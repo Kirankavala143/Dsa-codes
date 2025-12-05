@@ -179,15 +179,10 @@ for i in range(r-1,-1,-1):
 
 
 
-# find max and min in a list
+
+# l = [1, 2, 3, 4, 5]
+# max_val = max(l)
+# min_val = min(l)
+# square even numbers using list comprehension
 # n=int(input())
 # l=list(map(int,input().split()))
-
-
-
-
-
-
-print(max(l))
-
-print(min(l))
