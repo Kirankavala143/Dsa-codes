@@ -76,3 +76,5 @@ print(c)
 
 print("exam.py executed")
 print(l)
+print(n)
+print(type(n))

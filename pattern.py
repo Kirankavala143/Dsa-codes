@@ -174,3 +174,12 @@ for i in range(r-1,-1,-1):
 
 
 
+
+
+
+
+
+# find max and min in a list
+# n=int(input())
+# l=list(map(int,input().split()))
+
