@@ -195,12 +195,6 @@ for i in range(r-1,-1,-1):
 #     print()
 
 
-#     for j in range(temp):
-#         if j==0 or j==temp-1 or i==r-1:
-#             print("*",end="")
-#         else:
-#             print(" ",end="")
-#     print()
 
 
 #     for j in range(temp):
