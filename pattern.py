@@ -192,13 +192,12 @@ for i in range(r-1,-1,-1):
 
 
 
-
-
-
-
-
-
-
+# r=5
+# n=r-1 
+# for i in range(r):
+#     for j in range(n-i):  
+#         print(" ",end="")
+#     temp=i*2+1    
 #     for j in range(temp):
 #         if j==0 or j==temp-1 or i==r-1:
 #             print("*",end="")
