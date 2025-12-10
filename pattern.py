@@ -209,3 +209,4 @@ for i in range(r-1,-1,-1):
 # n=r-1     
 # for i in range(r):
 #     for j in range(n-i):
+#         print(" ",end="")
