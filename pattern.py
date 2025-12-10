@@ -210,3 +210,4 @@ for i in range(r-1,-1,-1):
 # for i in range(r):
 #     for j in range(n-i):
 #         print(" ",end="")
+#     temp=i*2+1
