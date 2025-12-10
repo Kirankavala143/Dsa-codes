@@ -211,3 +211,4 @@ for i in range(r-1,-1,-1):
 #     for j in range(n-i):
 #         print(" ",end="")
 #     temp=i*2+1
+#     for j in range(temp):
