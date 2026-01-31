@@ -7,13 +7,13 @@
 
 # Sum of Digit of a Number using Recursion
 
-# def sum_digit(n):
-#     if n == 0:
-#         return 0
-#     return n % 10 + sum_digit(n // 10)
+def sum_digit(n):
+    if n == 0:
+        return 0
+    return n % 10 + sum_digit(n // 10)
 
-# n = int(input())
-# print(sum_digit(n))
+n = int(input())
+print(sum_digit(n))
 
 # no of digits
 # n=543654
@@ -155,8 +155,8 @@
 # print(dic)
 
 # sqrt of number i don't want decimal value
-n=8
-print(round(n**0.5))
+# n=8
+# print(round(n**0.5))
 
 # do not use pow(x, 0.5) in c++ or x ** 0.5 in python.
 
