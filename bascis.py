@@ -166,4 +166,3 @@ print(sum_digit(n))
 #         print(i*j,end=" ")
 #     print()
 
-
