@@ -51,7 +51,6 @@
 # # s1.average()
 # print(s1.average())
 
-
 # class Student:
 #     def __init__(self,name,marks):
 #         self.name=name
@@ -70,20 +69,18 @@
 
 
 # ABSTRACTION= Hiding the implementation details of class, only showing the essential details to user(avoding unnecessary)
-# class car:
-#     def __init__(self):
-#         self.acc=False
-#         self.bre=False
-#         self.clu=False
+class car:
+    def __init__(self):
+        self.acc=False
+        self.bre=False
+        self.clu=False
     
-#     def start(self):
-#         self.clu=True
-#         self.acc=True
-#         print("car started...")
-# s1=car()
-# s1.start()
-
-
+    def start(self):
+        self.clu=True
+        self.acc=True
+        print("car started...")
+s1=car()
+s1.start()
 # ENCAPSULATION = Wrapping data and functions into single unit(object)
 
 
@@ -109,12 +106,6 @@ class Acount:
 acc1=Acount(123456,10000)
 acc1.debit(500)
 acc1.credit(1000)
-
-
-
-
-
-
 
 
 
