@@ -71,7 +71,6 @@
 # print("The extracted digits :", *sorted_digits)
 
 # sum of all values in dictionary by taking user input
-
 # n = int(input())
 # d = {}
 # for i in range(n):
@@ -301,6 +300,9 @@ print(cleaned_list)
 a="kiran"
 for i in a:
     print(i,sep="/")
+
+
+
 
 
 
